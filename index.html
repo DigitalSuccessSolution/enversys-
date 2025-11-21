@@ -426,7 +426,7 @@
     <section
       class="relative w-full min-h-[90vh] flex items-center justify-center bg-cover bg-center bg-fixed"
       style="
-        background-image: url('https://images.unsplash.com/photo-1524594081293-190a2fe0baae?q=80');
+        background-image: url('img/hero\ image\ .jfif');
       "
     >
       <div class="absolute inset-0 bg-[#1c89c8]/50"></div>
@@ -693,7 +693,7 @@
             <div class="relative">
               <div class="card overflow-hidden p-0 border-0">
                 <img
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
+                  src="img/about.jfif"
                   alt="Modern Office"
                   class="w-full h-[380px] sm:h-[480px] object-cover"
                 />
@@ -724,130 +724,232 @@
       </div>
     </section>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .btn-primary {
+      background: linear-gradient(135deg, #1c89c8 0%, #0f6ba3 100%);
+      color: white;
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(28, 137, 200, 0.3);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(28, 137, 200, 0.4);
+    }
+    .product-card {
+      height: 280px;
+    }
+    .product-image {
+      width: 50%;
+    }
+    .product-content {
+      width: 50%;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
 
-<!-- OUR PRODUCTS SECTION - COMPACT VERSION -->
+<!-- OUR PRODUCTS SECTION -->
 <section id="products" class="w-full py-16 sm:py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     
     <!-- Section Header -->
-    <div class="text-center mb-12">
+    <div class="text-center mb-16">
       <span class="inline-block bg-[#5cb650] text-white px-6 py-2.5 rounded-full text-sm font-bold tracking-wide uppercase mb-4" style="font-family: 'Lora', Georgia, serif;">Our Products</span>
-      <h2 class="text-[#0f172a] mb-4" style="font-family: 'Playfair Display', serif;">Premium Environmental Solutions</h2>
-      <p class="max-w-2xl mx-auto text-[#64748b] text-base" style="font-family: 'Lora', Georgia, serif;">Cutting-edge water treatment and environmental control systems designed for maximum efficiency.</p>
+      <h2 class="text-4xl md:text-5xl font-bold text-[#0f172a] mb-4" style="font-family: 'Playfair Display', serif;">Premium Environmental Solutions</h2>
+      <p class="max-w-2xl mx-auto text-[#64748b] text-lg" style="font-family: 'Lora', Georgia, serif;">
+        Comprehensive engineering solutions for water treatment, waste management and air pollution control systems.
+      </p>
     </div>
 
-    <!-- Products Grid - Horizontal Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-      
-      <!-- Product 1 -->
-      <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex">
-        <div class="relative w-32 flex-shrink-0 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=400" alt="ETP Plants" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-          <div class="absolute inset-0 bg-[#1c89c8]/10 group-hover:bg-[#1c89c8]/20 transition-all"></div>
+    <!-- Products Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+
+      <!-- Card 1: Water Treatment Plant -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 flex">
+        <!-- Image Section - 50% -->
+        <div class="product-image relative overflow-hidden">
+          <img src="img/water.jfif" alt="Water Treatment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#1c89c8]/20 to-transparent group-hover:from-[#1c89c8]/30 transition-all duration-500"></div>
         </div>
-        <div class="p-5 flex-1">
-          <h4 class="text-[#0f172a] mb-2 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 20px;">ETP Plants</h4>
-          <p class="text-[#64748b] text-sm mb-3" style="font-family: 'Lora', Georgia, serif;">Industrial wastewater treatment with advanced filtration.</p>
-          <a href="#" class="inline-flex items-center gap-1 text-[#1c89c8] font-semibold text-sm hover:gap-2 transition-all" style="font-family: 'Lora', Georgia, serif;">
-            Learn More
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+        
+        <!-- Content Section - 50% -->
+        <div class="product-content p-6 flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white">
+          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8] transition-colors duration-300" style="font-family: 'Playfair Display', serif;">WATER TREATMENT PLANT</h4>
+          <ul class="text-[#64748b] text-sm space-y-2" style="font-family: 'Lora', Georgia, serif;">
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Ultrafiltration Plant (UF)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Reverse Osmosis Plant (RO)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Water Treatment Plant (WTP)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Water Softening Plant</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Demineralisation Plant (DM)</span>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <!-- Product 2 -->
-      <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex">
-        <div class="relative w-32 flex-shrink-0 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?q=80&w=400" alt="STP Plants" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-          <div class="absolute inset-0 bg-[#1c89c8]/10 group-hover:bg-[#1c89c8]/20 transition-all"></div>
+      <!-- Card 2: Waste Water Treatment -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 flex">
+        <!-- Image Section - 50% -->
+        <div class="product-image relative overflow-hidden">
+          <img src="img/WASTE WATER TREATMENT.jfif" alt="Waste Water Treatment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#1c89c8]/20 to-transparent group-hover:from-[#1c89c8]/30 transition-all duration-500"></div>
         </div>
-        <div class="p-5 flex-1">
-          <h4 class="text-[#0f172a] mb-2 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 20px;">STP Plants</h4>
-          <p class="text-[#64748b] text-sm mb-3" style="font-family: 'Lora', Georgia, serif;">Sewage treatment with biological process technology.</p>
-          <a href="#" class="inline-flex items-center gap-1 text-[#1c89c8] font-semibold text-sm hover:gap-2 transition-all" style="font-family: 'Lora', Georgia, serif;">
-            Learn More
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex">
-        <div class="relative w-32 flex-shrink-0 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=400" alt="RO Systems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-          <div class="absolute inset-0 bg-[#1c89c8]/10 group-hover:bg-[#1c89c8]/20 transition-all"></div>
-        </div>
-        <div class="p-5 flex-1">
-          <h4 class="text-[#0f172a] mb-2 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 20px;">RO + UF Systems</h4>
-          <p class="text-[#64748b] text-sm mb-3" style="font-family: 'Lora', Georgia, serif;">Advanced membrane technology for pure water.</p>
-          <a href="#" class="inline-flex items-center gap-1 text-[#1c89c8] font-semibold text-sm hover:gap-2 transition-all" style="font-family: 'Lora', Georgia, serif;">
-            Learn More
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex">
-        <div class="relative w-32 flex-shrink-0 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1562016600-ece13e8ba570?q=80&w=400" alt="Water Softeners" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-          <div class="absolute inset-0 bg-[#1c89c8]/10 group-hover:bg-[#1c89c8]/20 transition-all"></div>
-        </div>
-        <div class="p-5 flex-1">
-          <h4 class="text-[#0f172a] mb-2 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 20px;">Water Softeners</h4>
-          <p class="text-[#64748b] text-sm mb-3" style="font-family: 'Lora', Georgia, serif;">Ion exchange systems for improved water quality.</p>
-          <a href="#" class="inline-flex items-center gap-1 text-[#1c89c8] font-semibold text-sm hover:gap-2 transition-all" style="font-family: 'Lora', Georgia, serif;">
-            Learn More
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Product 5 -->
-      <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex">
-        <div class="relative w-32 flex-shrink-0 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=400" alt="Organic Waste" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-          <div class="absolute inset-0 bg-[#1c89c8]/10 group-hover:bg-[#1c89c8]/20 transition-all"></div>
-        </div>
-        <div class="p-5 flex-1">
-          <h4 class="text-[#0f172a] mb-2 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 20px;">Organic Waste Converter</h4>
-          <p class="text-[#64748b] text-sm mb-3" style="font-family: 'Lora', Georgia, serif;">Automated composting for organic waste management.</p>
-          <a href="#" class="inline-flex items-center gap-1 text-[#1c89c8] font-semibold text-sm hover:gap-2 transition-all" style="font-family: 'Lora', Georgia, serif;">
-            Learn More
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+        
+        <!-- Content Section - 50% -->
+        <div class="product-content p-6 flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white overflow-y-auto">
+          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8] transition-colors duration-300" style="font-family: 'Playfair Display', serif;">WASTE WATER TREATMENT</h4>
+          <ul class="text-[#64748b] text-xs space-y-1.5" style="font-family: 'Lora', Georgia, serif;">
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Waste Water UF & RO</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Sewage Treatment Plant (STP)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Effluent Treatment Plant (ETP)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Single & Multiple Effect Evaporators</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Mechanical Vapor Recompression (MVR)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Agitated Thin Film Dryer (ATFD)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Dissolved Air Flotation (DAF)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Dewatering Equipment</span>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <!-- Product 6 -->
-      <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex">
-        <div class="relative w-32 flex-shrink-0 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?q=80&w=400" alt="Air Pollution" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
-          <div class="absolute inset-0 bg-[#1c89c8]/10 group-hover:bg-[#1c89c8]/20 transition-all"></div>
+      <!-- Card 3: Air Pollution Control -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 flex">
+        <!-- Image Section - 50% -->
+        <div class="product-image relative overflow-hidden">
+          <img src="img/AIR POLLUTION CONTROL.jfif" alt="Air Pollution Control" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#1c89c8]/20 to-transparent group-hover:from-[#1c89c8]/30 transition-all duration-500"></div>
         </div>
-        <div class="p-5 flex-1">
-          <h4 class="text-[#0f172a] mb-2 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 20px;">Air Pollution Control</h4>
-          <p class="text-[#64748b] text-sm mb-3" style="font-family: 'Lora', Georgia, serif;">Industrial air purification and dust collection systems.</p>
-          <a href="#" class="inline-flex items-center gap-1 text-[#1c89c8] font-semibold text-sm hover:gap-2 transition-all" style="font-family: 'Lora', Georgia, serif;">
-            Learn More
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
+        
+        <!-- Content Section - 50% -->
+        <div class="product-content p-6 flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white">
+          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8] transition-colors duration-300" style="font-family: 'Playfair Display', serif;">AIR POLLUTION CONTROL</h4>
+          <ul class="text-[#64748b] text-sm space-y-2" style="font-family: 'Lora', Georgia, serif;">
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Wet Scrubbers</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Dust Collectors</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Bag Filters</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Cyclone Filters</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Fume Extractors</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 4: Other Products -->
+      <div class="product-card group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 flex">
+        <!-- Image Section - 50% -->
+        <div class="product-image relative overflow-hidden">
+          <img src="img/other.jfif" alt="Other Products" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#1c89c8]/20 to-transparent group-hover:from-[#1c89c8]/30 transition-all duration-500"></div>
+        </div>
+        
+        <!-- Content Section - 50% -->
+        <div class="product-content p-6 flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white">
+          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8] transition-colors duration-300" style="font-family: 'Playfair Display', serif;">OTHER PRODUCTS</h4>
+          <ul class="text-[#64748b] text-sm space-y-2" style="font-family: 'Lora', Georgia, serif;">
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Organic Waste Converter (OWC)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Water & Waste Water Equipment</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Emission Monitoring System</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Rainwater Harvesting Systems</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-[#5cb650] mr-2">•</span>
+              <span>Treatment Chemicals</span>
+            </li>
+          </ul>
         </div>
       </div>
 
     </div>
 
-    <!-- CTA Button -->
+    <!-- CTA -->
     <div class="text-center">
-      <a href="#" class="btn-primary py-3 px-8">
+      <a href="#" class="btn-primary py-4 px-10 inline-flex items-center gap-3 text-lg">
         View All Products
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
       </a>
     </div>
 
   </div>
 </section>
 
+</body>
+</html>
 
 
 
@@ -962,160 +1064,268 @@
 
 
 
+<!-- we serve section start -->
+
+<style>
+    .service-circle {
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .service-circle:hover {
+      transform: translateY(-12px);
+    }
+    .service-circle:hover .circle-img {
+      transform: scale(1.15) rotate(5deg);
+      box-shadow: 0 25px 50px rgba(28, 137, 200, 0.5), 0 0 0 8px rgba(92, 182, 80, 0.2);
+    }
+    .circle-img {
+      transition: all 0.5s ease;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+    .circle-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(28, 137, 200, 0.3), rgba(92, 182, 80, 0.3));
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .service-circle:hover .circle-img::after {
+      opacity: 1;
+    }
+    .bg-pattern {
+      background-image: radial-gradient(circle at 20% 50%, rgba(28, 137, 200, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(92, 182, 80, 0.1) 0%, transparent 50%);
+    }
+</style>
+
 <!-- WE SERVE SECTION -->
-<section id="services" class="w-full py-20 sm:py-28 bg-[#0f172a] overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    
+<section id="services" class="w-full py-12 sm:py-16 bg-[#0f172a] overflow-hidden relative bg-pattern">
+
+  <!-- Animated Background -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-10 left-20 w-96 h-96 bg-[#1c89c8] rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-10 right-20 w-96 h-96 bg-[#5cb650] rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+  </div>
+
+  <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
     <!-- Section Header -->
-    <div class="text-center mb-20 serve-header">
-      <span class="inline-block bg-[#5cb650] text-white px-6 py-2.5 rounded-full text-sm font-bold tracking-wide uppercase mb-6" style="font-family: 'Lora', Georgia, serif;">What We Offer</span>
-      <h2 class="text-white mb-5" style="font-family: 'Playfair Display', serif;">We Serve</h2>
-      <p class="max-w-2xl mx-auto text-gray-400" style="font-family: 'Lora', Georgia, serif; font-size: 20px;">Comprehensive environmental solutions tailored to meet your industry's unique sustainability challenges.</p>
+    <div class="text-center mb-10">
+      <span class="inline-block bg-gradient-to-r from-[#5cb650] to-[#1c89c8] text-white px-6 py-2 rounded-full text-xs font-bold tracking-wider uppercase mb-3 shadow-lg" style="font-family: 'Lora', Georgia, serif;">What We Offer</span>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-3 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent" style="font-family: 'Playfair Display', serif;">We Serve</h2>
+      <p class="max-w-2xl mx-auto text-gray-300 text-base" style="font-family: 'Lora', Georgia, serif;">Comprehensive environmental solutions for your sustainability challenges</p>
     </div>
 
-    <!-- Services Grid - 6 Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Service 1 - Environmental Compliance -->
-      <div class="serve-card group relative bg-[#1e293b] rounded-2xl p-8 border border-gray-700/50 hover:border-[#1c89c8]/50 transition-all duration-500 overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-[#1c89c8]/10 rounded-full blur-3xl group-hover:bg-[#1c89c8]/20 transition-all duration-500"></div>
-        <div class="relative z-10">
-          <div class="w-16 h-16 bg-[#1c89c8] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    <!-- Services Grid -->
+    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-4 md:gap-6 mb-8">
+
+      <!-- SERVICE ITEM TEMPLATE (Repeated for all 15 services) -->
+      <!-- Only arrow removed here -->
+
+      <!-- Service 1 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://media.istockphoto.com/id/1383558438/photo/3d-render-of-automatic-car-production-line-with-robotic-arms-welding-parts.webp?a=1&b=1&s=612x612&w=0&k=20&c=xxQlNgHWA3MP_MSvnZolZHYdjKo7CBvAfg0I-cXhgeE=" alt="Environmental Compliance" class="w-full h-full object-cover"/>
           </div>
-          <span class="inline-block text-[#1c89c8] text-sm font-bold mb-3" style="font-family: 'Lora', Georgia, serif;">01</span>
-          <h3 class="text-white mb-4 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 26px;">Environmental Compliance</h3>
-          <p class="text-gray-400 mb-6" style="font-family: 'Lora', Georgia, serif; font-size: 17px;">Complete regulatory compliance solutions ensuring your operations meet all environmental standards.</p>
-          <a href="#" class="inline-flex items-center gap-2 text-[#5cb650] font-semibold group-hover:gap-4 transition-all" style="font-family: 'Lora', Georgia, serif; font-size: 16px;">
-            Learn More
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
         </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> AUTOMOBIL</h4>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://media.istockphoto.com/id/1301590318/photo/group-of-workers-discuss-the-sand-deposit-of-a-cement-factory-and-construction-structures.webp?a=1&b=1&s=612x612&w=0&k=20&c=TGxcK2C-nheWg5J6s-z-9w34ZpITex4oSckgO_yrNUw=" alt="Water Treatment" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> CEMENT</h4>
+      </div>
+
+      <!-- Continue same pattern for all services... (No arrow in any) -->
+
+      <!-- Service 3 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://plus.unsplash.com/premium_photo-1663100782154-0f89208bf732?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Q0hFTUlDQUwlMjAlMjYlMjBQSEFSTUFDRVVUSUNBTHxlbnwwfHwwfHx8MA%3D%3D" alt="Wastewater" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> CHEMICAL &
+ PHARMACEUTICAL</h4>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://images.unsplash.com/photo-1587351021355-a479a299d2f9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIzfHxIT1NQSVRBTHxlbnwwfHwwfHx8MA%3D%3D" alt="Air Pollution" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> HOSPITAL</h4>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://media.istockphoto.com/id/1218704952/photo/the-greater-chennai-corporation-ribbon-building-chennai-tamil-nadu-india-january-25-2020.webp?a=1&b=1&s=612x612&w=0&k=20&c=vqGRq9miuFX9Ad4YBEOruwkaJncLkO8X4_eDng1oZ8w=" alt="Waste Management" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> MUNCIPAL
+ CORPORATION</h4>
+      </div>
+
+      <!-- Continue remaining 10 services exactly same way (no arrows)... -->
+         <!-- Service 6 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://plus.unsplash.com/premium_photo-1726826693849-208029303ce0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UEFJTlR8ZW58MHx8MHx8fDA%3D" alt="Air Pollution" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> PAINT</h4>
       </div>
 
 
-      <div class="serve-card group relative bg-[#1e293b] rounded-2xl p-8 border border-gray-700/50 hover:border-[#1c89c8]/50 transition-all duration-500 overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-[#1c89c8]/10 rounded-full blur-3xl group-hover:bg-[#1c89c8]/20 transition-all duration-500"></div>
-        <div class="relative z-10">
-          <div class="w-16 h-16 bg-[#1c89c8] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <!-- Service 7 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://plus.unsplash.com/premium_photo-1677695581626-2a75bdece138?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UEFQRVIlMjAlMjYlMjAlMjBQVUxQJTIwZmFjb3RvcnklMjB3aXRoJTIwd29ya2VyfGVufDB8fDB8fHww" alt="Air Pollution" class="w-full h-full object-cover"/>
           </div>
-          <span class="inline-block text-[#1c89c8] text-sm font-bold mb-3" style="font-family: 'Lora', Georgia, serif;">01</span>
-          <h3 class="text-white mb-4 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 26px;">Environmental Compliance</h3>
-          <p class="text-gray-400 mb-6" style="font-family: 'Lora', Georgia, serif; font-size: 17px;">Complete regulatory compliance solutions ensuring your operations meet all environmental standards.</p>
-          <a href="#" class="inline-flex items-center gap-2 text-[#5cb650] font-semibold group-hover:gap-4 transition-all" style="font-family: 'Lora', Georgia, serif; font-size: 16px;">
-            Learn More
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
         </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1">PAPER &
+ PULP
+</h4>
+      </div>
+
+  <!-- Service 8-->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://images.unsplash.com/photo-1689574666546-75e1036e55fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFJFU0lERU5USUFMJTIwJTI2JTIwQ09NTUVSQ0lBTCUyMFBST0pFQ1RTfGVufDB8fDB8fHww" alt="Air Pollution" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> RESIDENTIAL & 
+COMMERCIAL 
+PROJECTS</h4>
+      </div>
+
+        <!-- Service 9 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://images.unsplash.com/photo-1734340216653-fb2cd5aaf9ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U1RFRUwlMjAlMjYlMjAlMjBQT1dFUiUyMHBsYW50fGVufDB8fDB8fHww" alt="Air Pollution" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> STEEL &
+ POWER</h4>
+      </div>
+
+        <!-- Service 10 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://media.istockphoto.com/id/647549318/photo/electrical-engineer-working-at-control-room-of-thermal-power-plant.webp?a=1&b=1&s=612x612&w=0&k=20&c=inkKi8kMzZ3tSFpEtFG4CDh18HQ13sqIwOWTIs6tVRQ=" alt="Air Pollution" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> EPC</h4>
+      </div>
+
+
+        <!-- Service 11 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://plus.unsplash.com/premium_photo-1734554230111-43840391fd01?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fEZPT0QlMjAlMjYlMjAlMjBCSU9URUNIfGVufDB8fDB8fHww" alt="Air Pollution" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> FOOD &
+ BIOTECH</h4>
       </div>
 
 
 
-
-      <div class="serve-card group relative bg-[#1e293b] rounded-2xl p-8 border border-gray-700/50 hover:border-[#1c89c8]/50 transition-all duration-500 overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-[#1c89c8]/10 rounded-full blur-3xl group-hover:bg-[#1c89c8]/20 transition-all duration-500"></div>
-        <div class="relative z-10">
-          <div class="w-16 h-16 bg-[#1c89c8] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <!-- Service 12 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://media.istockphoto.com/id/1197308344/photo/oil-storage-tank-in-the-port-in-tsing-yi-hong-kong.webp?a=1&b=1&s=612x612&w=0&k=20&c=-sJfLQq8hEDyPQN_nb0RdS8Wcd9pp_ExwYnfv1tPe3c=" alt="Air Pollution" class="w-full h-full object-cover"/>
           </div>
-          <span class="inline-block text-[#1c89c8] text-sm font-bold mb-3" style="font-family: 'Lora', Georgia, serif;">01</span>
-          <h3 class="text-white mb-4 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 26px;">Environmental Compliance</h3>
-          <p class="text-gray-400 mb-6" style="font-family: 'Lora', Georgia, serif; font-size: 17px;">Complete regulatory compliance solutions ensuring your operations meet all environmental standards.</p>
-          <a href="#" class="inline-flex items-center gap-2 text-[#5cb650] font-semibold group-hover:gap-4 transition-all" style="font-family: 'Lora', Georgia, serif; font-size: 16px;">
-            Learn More
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
         </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> REFINERY &
+ PETROCHEMICAL</h4>
       </div>
 
 
 
-
-
-      <div class="serve-card group relative bg-[#1e293b] rounded-2xl p-8 border border-gray-700/50 hover:border-[#1c89c8]/50 transition-all duration-500 overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-[#1c89c8]/10 rounded-full blur-3xl group-hover:bg-[#1c89c8]/20 transition-all duration-500"></div>
-        <div class="relative z-10">
-          <div class="w-16 h-16 bg-[#1c89c8] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <!-- Service 13 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://plus.unsplash.com/premium_photo-1664299732024-f0397c7da79a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8UlVCQkVSJTIwJTIwZmFjdG9yeXxlbnwwfHwwfHx8MA%3D%3D" alt="Air Pollution" class="w-full h-full object-cover"/>
           </div>
-          <span class="inline-block text-[#1c89c8] text-sm font-bold mb-3" style="font-family: 'Lora', Georgia, serif;">01</span>
-          <h3 class="text-white mb-4 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 26px;">Environmental Compliance</h3>
-          <p class="text-gray-400 mb-6" style="font-family: 'Lora', Georgia, serif; font-size: 17px;">Complete regulatory compliance solutions ensuring your operations meet all environmental standards.</p>
-          <a href="#" class="inline-flex items-center gap-2 text-[#5cb650] font-semibold group-hover:gap-4 transition-all" style="font-family: 'Lora', Georgia, serif; font-size: 16px;">
-            Learn More
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
         </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> RUBBER</h4>
+      </div>
+
+
+        <!-- Service 14 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://images.unsplash.com/photo-1732984160322-ec48339d8eb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFNVR0FSJTIwJTI2JTIwJTIwRElTVElMTEVSWSUyMGZhY290b3J5fGVufDB8fDB8fHww" alt="Air Pollution" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> SUGAR &
+ DISTILLERY</h4>
       </div>
 
 
 
-
-      <div class="serve-card group relative bg-[#1e293b] rounded-2xl p-8 border border-gray-700/50 hover:border-[#1c89c8]/50 transition-all duration-500 overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-[#1c89c8]/10 rounded-full blur-3xl group-hover:bg-[#1c89c8]/20 transition-all duration-500"></div>
-        <div class="relative z-10">
-          <div class="w-16 h-16 bg-[#1c89c8] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <!-- Service 15 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://images.unsplash.com/photo-1612685179841-3965cf0c3f70?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fFRFWFRJTEV8ZW58MHx8MHx8fDA%3D" alt="Air Pollution" class="w-full h-full object-cover"/>
           </div>
-          <span class="inline-block text-[#1c89c8] text-sm font-bold mb-3" style="font-family: 'Lora', Georgia, serif;">01</span>
-          <h3 class="text-white mb-4 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 26px;">Environmental Compliance</h3>
-          <p class="text-gray-400 mb-6" style="font-family: 'Lora', Georgia, serif; font-size: 17px;">Complete regulatory compliance solutions ensuring your operations meet all environmental standards.</p>
-          <a href="#" class="inline-flex items-center gap-2 text-[#5cb650] font-semibold group-hover:gap-4 transition-all" style="font-family: 'Lora', Georgia, serif; font-size: 16px;">
-            Learn More
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
         </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1"> TEXTILE
+</h4>
       </div>
 
 
-
-
-      <div class="serve-card group relative bg-[#1e293b] rounded-2xl p-8 border border-gray-700/50 hover:border-[#1c89c8]/50 transition-all duration-500 overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-[#1c89c8]/10 rounded-full blur-3xl group-hover:bg-[#1c89c8]/20 transition-all duration-500"></div>
-        <div class="relative z-10">
-          <div class="w-16 h-16 bg-[#1c89c8] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <!-- Service 16 -->
+      <div class="service-circle flex flex-col items-center group cursor-pointer">
+        <div class="relative mb-2">
+          <div class="circle-img w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#1c89c8] bg-gradient-to-br from-[#1c89c8]/20 to-[#5cb650]/20">
+            <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?q=80&w=400" alt="Air Pollution" class="w-full h-full object-cover"/>
           </div>
-          <span class="inline-block text-[#1c89c8] text-sm font-bold mb-3" style="font-family: 'Lora', Georgia, serif;">01</span>
-          <h3 class="text-white mb-4 group-hover:text-[#1c89c8] transition-colors" style="font-family: 'Playfair Display', serif; font-size: 26px;">Environmental Compliance</h3>
-          <p class="text-gray-400 mb-6" style="font-family: 'Lora', Georgia, serif; font-size: 17px;">Complete regulatory compliance solutions ensuring your operations meet all environmental standards.</p>
-          <a href="#" class="inline-flex items-center gap-2 text-[#5cb650] font-semibold group-hover:gap-4 transition-all" style="font-family: 'Lora', Georgia, serif; font-size: 16px;">
-            Learn More
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
         </div>
+        <h4 class="text-white text-center text-xs sm:text-sm font-semibold mb-1 group-hover:text-[#1c89c8] transition-colors leading-tight px-1">Air Pollution</h4>
       </div>
 
-
-
-
-      
-
-      <!-- Repeat similar structure for Services 2-6 -->
-      <!-- ... -->
+      <!-- I will continue all 15 services if you want full list again. -->
 
     </div>
 
-    <!-- Service 7 - Featured Large Card -->
-    <div class="serve-card-large mt-8 group relative bg-gradient-to-r from-[#1c89c8] to-[#5cb650] rounded-2xl p-10 overflow-hidden">
-      <div class="absolute inset-0 bg-black/20"></div>
-      <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-      <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
-        <div class="flex-1">
-          <span class="inline-block text-white/80 text-sm font-bold mb-3" style="font-family: 'Lora', Georgia, serif;">07 — PREMIUM SERVICE</span>
-          <h3 class="text-white mb-4" style="font-family: 'Playfair Display', serif; font-size: 32px;">Air Pollution Control Systems</h3>
-          <p class="text-white/80 mb-0 max-w-2xl" style="font-family: 'Lora', Georgia, serif; font-size: 18px;">Complete air quality management solutions including industrial scrubbers, electrostatic precipitators, and emission control systems.</p>
-        </div>
-        <a href="#" class="flex-shrink-0 bg-white text-[#1c89c8] font-bold py-4 px-8 rounded-xl hover:bg-[#0f172a] hover:text-white transition-all inline-flex items-center gap-3" style="font-family: 'Lora', Georgia, serif; font-size: 18px;">
-          Get Started
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
-      </div>
+    <!-- CTA Button -->
+    <div class="text-center">
+      <a href="/services" class="inline-flex items-center gap-2 bg-gradient-to-r from-[#1c89c8] to-[#5cb650] text-white font-bold py-3 px-8 rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg">
+        Explore All Services
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
     </div>
 
   </div>
 </section>
+
+<!-- we serve section end -->
 
 
 <!-- GOOGLE REVIEWS SECTION - PREMIUM SLIDER -->
