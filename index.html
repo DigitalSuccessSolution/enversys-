@@ -67,6 +67,7 @@
         color: var(--gray);
         line-height: 1.8;
       }
+      /* Updated Button Styles for Mobile Layout Compatibility */
       .btn-primary {
         background: var(--secondary);
         color: var(--white);
@@ -182,6 +183,7 @@
         height: 20px;
         position: relative;
         cursor: pointer;
+        z-index: 60;
       }
       .hamburger span {
         display: block;
@@ -222,6 +224,8 @@
         background: var(--white);
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         border-top: 1px solid #e2e8f0;
+        max-height: 85vh; /* Prevent menu from being too long */
+        overflow-y: auto;
       }
       .mobile-menu.active {
         display: block;
@@ -291,6 +295,15 @@
         justify-content: center;
         box-shadow: 0 8px 30px rgba(28, 137, 200, 0.4);
       }
+      
+      /* Fix for mobile button overlap */
+      @media (max-width: 640px) {
+        .mobile-btn-group {
+             padding: 1.5rem;
+             background-color: #f8fafc;
+             border-top: 1px solid #e2e8f0;
+        }
+      }
     </style>
   </head>
   <body>
@@ -326,7 +339,9 @@
             +91 9999999999
           </a>
         </div>
-        <div class="flex items-center gap-3">
+        
+        <!-- MODIFIED: Added 'hidden md:flex' to hide on mobile/tablet but show on desktop -->
+        <div class="hidden md:flex items-center gap-3">
           <a class="btn-primary py-2.5 px-5 text-sm" href="#">Get a Quote</a>
           <a class="btn-outline-white py-2 px-5 text-sm" href="#"
             >Get Brochure</a
@@ -341,9 +356,10 @@
         class="max-w-7xl mx-auto flex justify-between items-center py-4 px-4 relative"
       >
         <a href="#" class="flex items-center gap-3">
-          <img
-            src="img/logo.png"
-            alt="Enversys Logo"
+          <img 
+            src="img/logo.png" 
+            onerror="this.onerror=null; this.src='https://placehold.co/180x60/png?text=Enversys'; this.style.opacity='0.7'"
+            alt="Enversys Logo" 
             class="h-10 sm:h-12 object-contain"
           />
         </a>
@@ -361,6 +377,8 @@
         <button id="menuBtn" class="lg:hidden hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
+        
+        <!-- MOBILE MENU -->
         <div id="mobileMenu" class="mobile-menu lg:hidden">
           <a
             href="#"
@@ -368,7 +386,7 @@
             >Home</a
           >
           <a
-            href="savecode.html"
+            href="#about"
             class="block py-4 px-6 border-b border-gray-100 hover:bg-[#f8fafc] hover:text-[#1c89c8] transition-all font-medium"
             >About</a
           >
@@ -389,9 +407,15 @@
           >
           <a
             href="#contact"
-            class="block py-4 px-6 hover:bg-[#f8fafc] hover:text-[#1c89c8] transition-all font-medium"
+            class="block py-4 px-6 border-b border-gray-100 hover:bg-[#f8fafc] hover:text-[#1c89c8] transition-all font-medium"
             >Contact</a
           >
+          
+          <!-- ADDED: Mobile Specific Buttons (Moved from Top Bar) -->
+          <div class="p-6 flex flex-col gap-4 bg-slate-50 border-t border-gray-200">
+              <a class="btn-primary w-full justify-center py-3" href="#">Get a Quote</a>
+              <a class="btn-secondary w-full justify-center py-3" href="#">Get Brochure</a>
+          </div>
         </div>
       </div>
     </header>
@@ -454,7 +478,7 @@
           </a>
           <a
             class="bg-white text-[#1c89c8] font-semibold text-base py-4 px-10 rounded-lg shadow-xl hover:bg-[#1c89c8] hover:text-white transition-all inline-flex items-center justify-center gap-2"
-            href="#"
+            href="#contact"
           >
             Contact Us
             <svg
