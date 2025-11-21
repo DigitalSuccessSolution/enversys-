@@ -357,7 +357,7 @@
       <div
         class="max-w-7xl mx-auto flex justify-between items-center py-4 px-4 relative"
       >
-        <a href="#" class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3">
           <img 
             src="img/logo.png" 
             onerror="this.onerror=null; this.src='https://placehold.co/180x60/png?text=Enversys'; this.style.opacity='0.7'"
@@ -366,14 +366,14 @@
           />
         </a>
         <nav class="hidden lg:flex gap-8 text-[15px]">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
           <a href="#" class="nav-link">Product</a>
-          <a href="#" class="nav-link">Services</a>
-          <a href="#" class="nav-link">Blogs</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="service.html" class="nav-link">Services</a>
+          <a href="Blogs.html" class="nav-link">Blogs</a>
+          <a href="Contact.html" class="nav-link">Contact</a>
         </nav>
-        <a href="#contact" class="hidden lg:inline-flex btn-primary py-3 px-6"
+        <a href="Contact.html" class="hidden lg:inline-flex btn-primary py-3 px-6"
           >Contact Us</a
         >
         <button id="menuBtn" class="lg:hidden hamburger" aria-label="Menu">
@@ -383,12 +383,12 @@
         <!-- MOBILE MENU -->
         <div id="mobileMenu" class="mobile-menu lg:hidden">
           <a
-            href="#"
+            href="index.html"
             class="block py-4 px-6 border-b border-gray-100 hover:bg-[#f8fafc] hover:text-[#1c89c8] transition-all font-medium"
             >Home</a
           >
           <a
-            href="#about"
+            href="about.html"
             class="block py-4 px-6 border-b border-gray-100 hover:bg-[#f8fafc] hover:text-[#1c89c8] transition-all font-medium"
             >About</a
           >
@@ -398,17 +398,17 @@
             >Product</a
           >
           <a
-            href="#"
+            href="service.html"
             class="block py-4 px-6 border-b border-gray-100 hover:bg-[#f8fafc] hover:text-[#1c89c8] transition-all font-medium"
             >Services</a
           >
           <a
-            href="#"
+            href="Blogs.html"
             class="block py-4 px-6 border-b border-gray-100 hover:bg-[#f8fafc] hover:text-[#1c89c8] transition-all font-medium"
             >Blogs</a
           >
           <a
-            href="#contact"
+            href="Contact.html"
             class="block py-4 px-6 border-b border-gray-100 hover:bg-[#f8fafc] hover:text-[#1c89c8] transition-all font-medium"
             >Contact</a
           >
@@ -421,6 +421,13 @@
         </div>
       </div>
     </header>
+
+
+
+
+
+
+
 
     <!-- HERO SECTION -->
     <section
@@ -549,6 +556,11 @@
         </svg>
       </div>
     </section>
+
+
+
+
+
 
     <!-- ABOUT SECTION -->
     <section id="about" class="w-full py-20 sm:py-28 bg-[#f8fafc]">
@@ -724,52 +736,77 @@
       </div>
     </section>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products Section</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    .btn-primary {
-      background: linear-gradient(135deg, #1c89c8 0%, #0f6ba3 100%);
-      color: white;
-      font-family: 'Lora', Georgia, serif;
-      font-weight: 600;
-      border-radius: 0.5rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(28, 137, 200, 0.3);
-    }
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(28, 137, 200, 0.4);
-    }
+
+
+
+
+<!-- OUR PRODUCTS SECTION  Start-->
+
+<style>
+  .btn-primary {
+    background: linear-gradient(135deg, #1c89c8 0%, #0f6ba3 100%);
+    color: white;
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(28, 137, 200, 0.3);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(28, 137, 200, 0.4);
+  }
+
+  /* Maintain height only for large screens */
+  @media(min-width:1024px){
     .product-card {
       height: 280px;
     }
-    .product-image {
-      width: 50%;
-    }
+    .product-image, 
     .product-content {
       width: 50%;
     }
-  </style>
-</head>
-<body class="bg-gray-50">
+  }
 
-<!-- OUR PRODUCTS SECTION -->
+  /* Mobile Responsive Fix */
+  @media(max-width:1023px) {
+    .product-card {
+      flex-direction: column;
+      height: auto;
+    }
+    .product-image {
+      width: 100%;
+      height: 220px;
+    }
+    .product-content {
+      width: 100%;
+      padding: 20px !important;
+    }
+    .product-content h4 {
+      font-size: 1.1rem;
+    }
+    .product-content ul li span:last-child {
+      font-size: 0.85rem;
+    }
+  }
+</style>
+
+
 <section id="products" class="w-full py-16 sm:py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     
     <!-- Section Header -->
     <div class="text-center mb-16">
-      <span class="inline-block bg-[#5cb650] text-white px-6 py-2.5 rounded-full text-sm font-bold tracking-wide uppercase mb-4" style="font-family: 'Lora', Georgia, serif;">Our Products</span>
-      <h2 class="text-4xl md:text-5xl font-bold text-[#0f172a] mb-4" style="font-family: 'Playfair Display', serif;">Premium Environmental Solutions</h2>
-      <p class="max-w-2xl mx-auto text-[#64748b] text-lg" style="font-family: 'Lora', Georgia, serif;">
+      <span class="inline-block bg-[#5cb650] text-white px-6 py-2.5 rounded-full text-sm font-bold tracking-wide uppercase mb-4"
+        style="font-family: 'Lora', Georgia, serif;">Our Products</span>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-[#0f172a] mb-4"
+        style="font-family: 'Playfair Display', serif;">
+        Premium Environmental Solutions
+      </h2>
+
+      <p class="max-w-2xl mx-auto text-[#64748b] text-lg"
+        style="font-family: 'Lora', Georgia, serif;">
         Comprehensive engineering solutions for water treatment, waste management and air pollution control systems.
       </p>
     </div>
@@ -777,158 +814,100 @@
     <!-- Products Grid -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
 
-      <!-- Card 1: Water Treatment Plant -->
+      <!-- CARD 1 -->
       <div class="product-card group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 flex">
-        <!-- Image Section - 50% -->
+        
         <div class="product-image relative overflow-hidden">
-          <img src="img/water.jfif" alt="Water Treatment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
+          <img src="img/water.jfif" alt="Water Treatment"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
           <div class="absolute inset-0 bg-gradient-to-r from-[#1c89c8]/20 to-transparent group-hover:from-[#1c89c8]/30 transition-all duration-500"></div>
         </div>
-        
-        <!-- Content Section - 50% -->
+
         <div class="product-content p-6 flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white">
-          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8] transition-colors duration-300" style="font-family: 'Playfair Display', serif;">WATER TREATMENT PLANT</h4>
+          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8]"
+            style="font-family: 'Playfair Display', serif;">WATER TREATMENT PLANT</h4>
+
           <ul class="text-[#64748b] text-sm space-y-2" style="font-family: 'Lora', Georgia, serif;">
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Ultrafiltration Plant (UF)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Reverse Osmosis Plant (RO)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Water Treatment Plant (WTP)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Water Softening Plant</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Demineralisation Plant (DM)</span>
-            </li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Ultrafiltration Plant (UF)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Reverse Osmosis Plant (RO)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Water Treatment Plant (WTP)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Water Softening Plant</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Demineralisation Plant (DM)</span></li>
           </ul>
         </div>
       </div>
 
-      <!-- Card 2: Waste Water Treatment -->
+
+      <!-- CARD 2 -->
       <div class="product-card group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 flex">
-        <!-- Image Section - 50% -->
+
         <div class="product-image relative overflow-hidden">
-          <img src="img/WASTE WATER TREATMENT.jfif" alt="Waste Water Treatment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
+          <img src="img/WASTE WATER TREATMENT.jfif" alt="Waste Water Treatment"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
           <div class="absolute inset-0 bg-gradient-to-r from-[#1c89c8]/20 to-transparent group-hover:from-[#1c89c8]/30 transition-all duration-500"></div>
         </div>
-        
-        <!-- Content Section - 50% -->
+
         <div class="product-content p-6 flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white overflow-y-auto">
-          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8] transition-colors duration-300" style="font-family: 'Playfair Display', serif;">WASTE WATER TREATMENT</h4>
+          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8]"
+            style="font-family: 'Playfair Display', serif;">WASTE WATER TREATMENT</h4>
+
           <ul class="text-[#64748b] text-xs space-y-1.5" style="font-family: 'Lora', Georgia, serif;">
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Waste Water UF & RO</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Sewage Treatment Plant (STP)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Effluent Treatment Plant (ETP)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Single & Multiple Effect Evaporators</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Mechanical Vapor Recompression (MVR)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Agitated Thin Film Dryer (ATFD)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Dissolved Air Flotation (DAF)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Dewatering Equipment</span>
-            </li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Waste Water UF & RO</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Sewage Treatment Plant (STP)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Effluent Treatment Plant (ETP)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Single & Multiple Effect Evaporators</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Mechanical Vapor Recompression (MVR)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Agitated Thin Film Dryer (ATFD)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Dissolved Air Flotation (DAF)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Dewatering Equipment</span></li>
           </ul>
         </div>
       </div>
 
-      <!-- Card 3: Air Pollution Control -->
+
+      <!-- CARD 3 -->
       <div class="product-card group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 flex">
-        <!-- Image Section - 50% -->
+
         <div class="product-image relative overflow-hidden">
-          <img src="img/AIR POLLUTION CONTROL.jfif" alt="Air Pollution Control" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
+          <img src="img/AIR POLLUTION CONTROL.jfif" alt="Air Pollution Control"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
           <div class="absolute inset-0 bg-gradient-to-r from-[#1c89c8]/20 to-transparent group-hover:from-[#1c89c8]/30 transition-all duration-500"></div>
         </div>
-        
-        <!-- Content Section - 50% -->
+
         <div class="product-content p-6 flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white">
-          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8] transition-colors duration-300" style="font-family: 'Playfair Display', serif;">AIR POLLUTION CONTROL</h4>
+          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8]"
+            style="font-family: 'Playfair Display', serif;">AIR POLLUTION CONTROL</h4>
+
           <ul class="text-[#64748b] text-sm space-y-2" style="font-family: 'Lora', Georgia, serif;">
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Wet Scrubbers</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Dust Collectors</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Bag Filters</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Cyclone Filters</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Fume Extractors</span>
-            </li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Wet Scrubbers</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Dust Collectors</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Bag Filters</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Cyclone Filters</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Fume Extractors</span></li>
           </ul>
         </div>
       </div>
 
-      <!-- Card 4: Other Products -->
+
+      <!-- CARD 4 -->
       <div class="product-card group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 flex">
-        <!-- Image Section - 50% -->
+
         <div class="product-image relative overflow-hidden">
-          <img src="img/other.jfif" alt="Other Products" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
+          <img src="img/other.jfif" alt="Other Products"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"/>
           <div class="absolute inset-0 bg-gradient-to-r from-[#1c89c8]/20 to-transparent group-hover:from-[#1c89c8]/30 transition-all duration-500"></div>
         </div>
-        
-        <!-- Content Section - 50% -->
+
         <div class="product-content p-6 flex flex-col justify-center bg-gradient-to-br from-gray-50 to-white">
-          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8] transition-colors duration-300" style="font-family: 'Playfair Display', serif;">OTHER PRODUCTS</h4>
+          <h4 class="text-xl font-bold text-[#0f172a] mb-4 group-hover:text-[#1c89c8]"
+            style="font-family: 'Playfair Display', serif;">OTHER PRODUCTS</h4>
+
           <ul class="text-[#64748b] text-sm space-y-2" style="font-family: 'Lora', Georgia, serif;">
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Organic Waste Converter (OWC)</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Water & Waste Water Equipment</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Emission Monitoring System</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Rainwater Harvesting Systems</span>
-            </li>
-            <li class="flex items-start">
-              <span class="text-[#5cb650] mr-2">•</span>
-              <span>Treatment Chemicals</span>
-            </li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Organic Waste Converter (OWC)</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Water & Waste Water Equipment</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Emission Monitoring System</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Rainwater Harvesting Systems</span></li>
+            <li class="flex items-start"><span class="text-[#5cb650] mr-2">•</span><span>Treatment Chemicals</span></li>
           </ul>
         </div>
       </div>
@@ -948,9 +927,7 @@
   </div>
 </section>
 
-</body>
-</html>
-
+<!-- OUR PRODUCTS SECTION  end-->
 
 
 
