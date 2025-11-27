@@ -300,9 +300,9 @@
           </svg>
         </button>
         <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="our-company.html" class="block px-4 py-2 hover:bg-gray-50">Our Company</a>
+          <a href="about.html" class="block px-4 py-2 hover:bg-gray-50">Our Company</a>
           <a href="founder.html" class="block px-4 py-2 hover:bg-gray-50">Founder</a>
-          <a href="our-team.html" class="block px-4 py-2 hover:bg-gray-50">Our Team</a>
+          <a href="ourteam.html" class="block px-4 py-2 hover:bg-gray-50">Our Team</a>
         </div>
       </div>
 
@@ -339,7 +339,7 @@
         </div>
       </div>
 
-      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="porject.html" class="nav-link">Projects</a>
       <a href="blogs.html" class="nav-link">Blogs</a>
       <a href="career.html" class="nav-link">Career</a>
       <a href="contact.html" class="nav-link">Contact</a>
@@ -737,24 +737,64 @@
             </div>
 
         </div>
-         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-          <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
-            <h3 class="text-[#1c89c8] mb-2 font-bold text-4xl">500+</h3>
-            <p class="text-[#64748b] mb-0 font-sans">Happy Clients</p>
-          </div>
-          <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
-            <h3 class="text-[#5cb650] mb-2 font-bold text-4xl">1000+</h3>
-            <p class="text-[#64748b] mb-0 font-sans">Projects Done</p>
-          </div>
-          <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
-            <h3 class="text-[#1c89c8] mb-2 font-bold text-4xl">50+</h3>
-            <p class="text-[#64748b] mb-0 font-sans">Expert Team</p>
-          </div>
-          <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
-            <h3 class="text-[#5cb650] mb-2 font-bold text-4xl">10+</h3>
-            <p class="text-[#64748b] mb-0 font-sans">Years Experience</p>
-          </div>
-        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16" id="counterSection">
+  
+  <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+    <h3 class="text-[#1c89c8] mb-2 font-bold text-4xl counter" data-target="500">0</h3>
+    <p class="text-[#64748b] mb-0 font-sans">Happy Clients</p>
+  </div>
+
+  <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+    <h3 class="text-[#5cb650] mb-2 font-bold text-4xl counter" data-target="1000">0</h3>
+    <p class="text-[#64748b] mb-0 font-sans">Projects Done</p>
+  </div>
+
+  <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+    <h3 class="text-[#1c89c8] mb-2 font-bold text-4xl counter" data-target="50">0</h3>
+    <p class="text-[#64748b] mb-0 font-sans">Expert Team</p>
+  </div>
+
+  <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
+    <h3 class="text-[#5cb650] mb-2 font-bold text-4xl counter" data-target="10">0</h3>
+    <p class="text-[#64748b] mb-0 font-sans">Years Experience</p>
+  </div>
+
+</div>
+<script>
+  const counters = document.querySelectorAll('.counter');
+  let counted = false;
+
+  function startCounting() {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 40; // smaller = faster
+
+        const increment = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  }
+
+  // Trigger when element becomes visible
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !counted) {
+      startCounting();
+      counted = true;
+    }
+  });
+
+  observer.observe(document.querySelector("#counterSection"));
+</script>
+
     </div>
 </section>
 <!-- ABOUT SECTION END -->
@@ -1218,8 +1258,7 @@
     <!-- Enversys Logo -->
     <div>
       <div class="flex items-center gap-3 mb-6">
-        <div class="w-10 h-10 rounded-lg bg-[#5cb650] flex items-center justify-center text-white font-bold text-lg">E</div>
-        <span class="text-2xl font-bold text-white">Enversys</span>
+        <img src="img/logo.png">
       </div>
       <p class="text-gray-400 text-sm mb-6">Enversys provides comprehensive environmental and sustainability solutions across India.</p>
       <div class="flex gap-3">
@@ -1239,7 +1278,7 @@
 
     <!-- Our Services -->
     <div>
-      <h3 class="text-lg font-bold text-white mb-4">Our Services</h3>
+      <h3 class="text-lg font-bold text-[#1c89c8] mb-4">Our Services</h3>
       <ul class="space-y-0.3 text-gray-400 text-sm">
         <li><a href="environment-services.html" class="hover:text-[#5cb650]">Environment Services</a></li>
         <li><a href="sustainability-services.html" class="hover:text-[#5cb650]">Sustainability Services</a></li>
@@ -1251,7 +1290,7 @@
 
     <!-- Our Products -->
     <div>
-      <h3 class="text-lg font-bold text-white mb-4">Our Products</h3>
+      <h3 class="text-lg font-bold text-[#1c89c8] mb-4">Our Products</h3>
       <ul class="space-y-0.3 text-gray-400 text-sm">
         <li><a href="water-treatment-plant.html" class="hover:text-[#5cb650]">Water Treatment Plant</a></li>
         <li><a href="air-pollution-control.html" class="hover:text-[#5cb650]">Air Pollution Control Equipment</a></li>
@@ -1262,7 +1301,7 @@
 
     <!-- Quick Links -->
     <div>
-      <h3 class="text-lg font-bold text-white mb-4">Quick Links</h3>
+      <h3 class="text-lg font-bold text-[#1c89c8] mb-4">Quick Links</h3>
       <ul class="space-y-0.3 text-gray-400 text-sm">
         <li><a href="index.html" class="hover:text-[#5cb650]">Home</a></li>
         <li><a href="about.html" class="hover:text-[#5cb650]">About</a></li>
@@ -1277,7 +1316,7 @@
 
     <!-- Corporate Office -->
     <div>
-      <h3 class="text-lg font-bold text-white mb-4">Corporate Office</h3>
+      <h3 class="text-lg font-bold text-[#1c89c8] mb-4">Corporate Office</h3>
       <div class="space-y-2 text-sm text-gray-400">
         <p>Greens Center, Aditya Birla Hospital Road</p>
         <p>Thergaon, Pune 411033</p>
