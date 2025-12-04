@@ -257,7 +257,7 @@
   </head>
   <body>
     <!-- TOP BAR -->
-    <div class="w-full bg-[#1c89c8] text-white">
+     <div class="w-full bg-[#5cb650] text-white">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center py-3 px-4 gap-3">
         <div class="flex flex-wrap items-center justify-center gap-6">
           <a href="mailto:info@enversys.com" class="flex items-center gap-2 hover:text-gray-200 transition-colors text-sm font-sans">
@@ -266,7 +266,7 @@
           </a>
           <a href="tel:+919999999999" class="flex items-center gap-2 hover:text-gray-200 transition-colors text-sm font-sans">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
-            +91-21-35358761
+             +91 9850600099 / 020-295218030
           </a>
         </div>
         <div class="hidden md:flex items-center gap-3">
@@ -279,146 +279,184 @@
  <!-- NAVBAR -->
 <header class="w-full bg-white shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-4 relative">
-    <!-- Logo -->
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="img/logo.png" 
+    
+    <a href="/index.html" class="flex items-center gap-3">
+      <img src="/img/logo.png" 
            onerror="this.onerror=null; this.src='https://placehold.co/180x60/ffffff/1c89c8?text=Enversys'; this.style.opacity='1'" 
            alt="Enversys Logo" 
            class="h-10 sm:h-12 object-contain" />
     </a>
 
-    <!-- Desktop Menu -->
-    <nav class="hidden lg:flex gap-8 text-[15px]  relative">
-      <a href="index.html" class="nav-link">Home</a>
+    <nav class="hidden lg:flex gap-8 text-[15px] relative items-center">
+      <a href="/index.html" class="nav-link hover:text-blue-600 transition-colors">Home</a>
 
-      <!-- About Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
           About
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="about.html" class="block px-4 py-2 hover:bg-gray-50">Our Company</a>
-          <a href="founder.html" class="block px-4 py-2 hover:bg-gray-50">Founder</a>
-          <a href="ourteam.html" class="block px-4 py-2 hover:bg-gray-50">Our Team</a>
+        <div class="absolute left-0 top-full mt-0 w-56 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/about.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Our Company</a>
+            <a href="/founder.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Founder</a>
+            <a href="/ourteam.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Our Team</a>
+            <a href="/why-us.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Why Us</a>
+            <a href="/certificates.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Certificates</a>
+          </div>
         </div>
       </div>
 
-      <!-- Services Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
           Services
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-64 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="environment-services.html" class="block px-4 py-2 hover:bg-gray-50">Environment Services</a>
-          <a href="sustainability-services.html" class="block px-4 py-2 hover:bg-gray-50">Sustainability Services</a>
-          <a href="other-legal-compliance.html" class="block px-4 py-2 hover:bg-gray-50">Other Legal Compliance Services</a>
-          <a href="consent-management.html" class="block px-4 py-2 hover:bg-gray-50">Consent Management and Compliances</a>
-          <a href="environment-monitoring.html" class="block px-4 py-2 hover:bg-gray-50">Environment Monitoring</a>
+        <div class="absolute left-0 top-full mt-0 w-72 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/services/EnvironmentalServices.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Environmental Services</a>
+            <a href="/services/consent-management.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Consent Management and Compliances</a>
+            <a href="/services/legal-compliances.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Other Legal Compliances Services</a>
+            <a href="/services/sustainability-services.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Sustainability Services</a>
+            <a href="/services/NABL&MoEFLABORATORY.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Environmental Monitoring</a>
+          </div>
         </div>
       </div>
 
-      <!-- Product Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
-          Product
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
+          Products
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-64 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="water-treatment-plant.html" class="block px-4 py-2 hover:bg-gray-50">Water Treatment Plant</a>
-          <a href="air-pollution-control.html" class="block px-4 py-2 hover:bg-gray-50">Air Pollution Control Equipment</a>
-          <a href="waste-water-treatment.html" class="block px-4 py-2 hover:bg-gray-50">Waste Water Treatment</a>
-          <a href="other-products.html" class="block px-4 py-2 hover:bg-gray-50">Other Products</a>
+        <div class="absolute left-0 top-full mt-0 w-80 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/products/ETP.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Effluent Treatment Plants (ETP)</a>
+            <a href="/products/STP.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Sewage Treatment Plants (STP)</a>
+            <a href="/products/ZLD.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Zero Liquid Discharge (ZLD)</a>
+            <a href="/products/RO+UF.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">RO+UF Plants</a>
+            <a href="/products/WaterSofteners.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Water Softeners</a>
+            <a href="/products/DMPlants.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">DM Plants</a>
+            <a href="/products/OrganicWasteConverters.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Organic Waste Converters</a>
+            <a href="/products/Air PollutionControlEquipment.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Air Pollution Control Equipment</a>
+          </div>
         </div>
       </div>
 
-      <a href="porject.html" class="nav-link">Projects</a>
-               <a href="Blogs.html" class="nav-link">Blogs</a>
-
-      <a href="career.html" class="nav-link">Career</a>
-      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="/porject.html" class="nav-link hover:text-blue-600 transition-colors">Projects</a>
+      <a href="/blogs.html" class="nav-link hover:text-blue-600 transition-colors">Blogs</a>
+      <a href="/career.html" class="nav-link hover:text-blue-600 transition-colors">Career</a>
+      <a href="/contact.html" class="nav-link hover:text-blue-600 transition-colors">Contact</a>
     </nav>
 
-    <!-- Contact Button -->
-    <a href="contact.html" class="hidden lg:inline-flex btn-primary py-2.5 px-6">Contact Us</a>
+    <a href="/contact.html" class="hidden lg:inline-flex bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium rounded-md py-2.5 px-6">Contact Us</a>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="lg:hidden hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
+    <button id="menuBtn" class="lg:hidden p-2 text-gray-700 hover:text-blue-600 focus:outline-none" aria-label="Menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
     </button>
+  </div>
 
-    <!-- MOBILE MENU -->
-    <div id="mobileMenu" class="mobile-menu lg:hidden hidden">
-      <a href="index.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Home</a>
-      
-      <!-- About Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('aboutMobile')">
-          About
-          <svg class="w-4 h-4 transform transition-transform" id="aboutMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="aboutMobile" class="hidden flex-col bg-gray-50">
-          <a href="our-company.html" class="block py-2 px-6 hover:bg-gray-100">Our Company</a>
-          <a href="founder.html" class="block py-2 px-6 hover:bg-gray-100">Founder</a>
-          <a href="our-team.html" class="block py-2 px-6 hover:bg-gray-100">Our Team</a>
-        </div>
+  <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full shadow-lg h-[calc(100vh-80px)] overflow-y-auto">
+    
+    <a href="/index.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Home</a>
+    
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('aboutMobile')">
+        About
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="aboutMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="aboutMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/about.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Our Company</a>
+        <a href="/founder.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Founder</a>
+        <a href="/ourteam.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Our Team</a>
+        <a href="/why-us.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Why Us</a>
+        <a href="/certificates.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Certificates</a>
       </div>
+    </div>
 
-      <!-- Services Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('servicesMobile')">
-          Services
-          <svg class="w-4 h-4 transform transition-transform" id="servicesMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="servicesMobile" class="hidden flex-col bg-gray-50">
-          <a href="environment-services.html" class="block py-2 px-6 hover:bg-gray-100">Environment Services</a>
-          <a href="sustainability-services.html" class="block py-2 px-6 hover:bg-gray-100">Sustainability Services</a>
-          <a href="other-legal-compliance.html" class="block py-2 px-6 hover:bg-gray-100">Other Legal Compliance Services</a>
-          <a href="consent-management.html" class="block py-2 px-6 hover:bg-gray-100">Consent Management and Compliances</a>
-          <a href="environment-monitoring.html" class="block py-2 px-6 hover:bg-gray-100">Environment Monitoring</a>
-        </div>
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('servicesMobile')">
+        Services
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="servicesMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="servicesMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/services/EnvironmentalServices.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Environmental Services</a>
+        <a href="/services/consent-management.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Consent Management and Compliances</a>
+        <a href="/services/legal-compliances.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Other Legal Compliances Services</a>
+        <a href="/services/sustainability-services.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Sustainability Services</a>
+        <a href="/services/environmental-monitoring.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Environmental Monitoring</a>
       </div>
+    </div>
 
-      <!-- Product Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('productMobile')">
-          Product
-          <svg class="w-4 h-4 transform transition-transform" id="productMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="productMobile" class="hidden flex-col bg-gray-50">
-          <a href="water-treatment-plant.html" class="block py-2 px-6 hover:bg-gray-100">Water Treatment Plant</a>
-          <a href="air-pollution-control.html" class="block py-2 px-6 hover:bg-gray-100">Air Pollution Control Equipment</a>
-          <a href="waste-water-treatment.html" class="block py-2 px-6 hover:bg-gray-100">Waste Water Treatment</a>
-          <a href="other-products.html" class="block py-2 px-6 hover:bg-gray-100">Other Products</a>
-        </div>
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('productMobile')">
+        Products
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="productMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="productMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/products/ETP.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Effluent Treatment Plants (ETP)</a>
+        <a href="/products/STP.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Sewage Treatment Plants (STP)</a>
+        <a href="/products/ZLD.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Zero Liquid Discharge (ZLD)</a>
+        <a href="/products/RO+UF.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">RO+UF Plants</a>
+        <a href="/products/WaterSofteners.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Water Softeners</a>
+        <a href="/products/DMPlants.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">DM Plants</a>
+        <a href="/products/OrganicWasteConverters.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Organic Waste Converters</a>
+        <a href="/products/Air PollutionControlEquipment.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Air Pollution Control Equipment</a>
       </div>
+    </div>
 
-      <a href="projects.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Projects</a>
-      <a href="blogs.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Blogs</a>
-      <a href="career.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Career</a>
-      <a href="contact.html" class="block py-4 px-6 hover:bg-gray-50 font-medium">Contact</a>
+    <a href="/projects.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Projects</a>
+    <a href="/blogs.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Blogs</a>
+    <a href="/career.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Career</a>
+    <a href="/contact.html" class="block py-4 px-6 hover:bg-gray-50 font-medium text-gray-800">Contact</a>
 
-      <div class="p-6 flex flex-col gap-4 bg-slate-50 border-t border-gray-200">
-        <a class="btn-primary w-full justify-center py-3" href="#">Get a Quote</a>
-        <a class="btn-secondary w-full justify-center py-3" href="#">Get Brochure</a>
-      </div>
+    <div class="p-6 flex flex-col gap-3 bg-white border-t border-gray-200 mb-10">
+      <a class="block w-full text-center bg-blue-600 text-white font-medium py-3 rounded hover:bg-blue-700 transition-colors" href="#">Get a Quote</a>
+      <a class="block w-full text-center border border-gray-300 text-gray-700 font-medium py-3 rounded hover:bg-gray-50 transition-colors" href="#">Get Brochure</a>
     </div>
   </div>
 </header>
 
+<script>
+  // Toggle Main Mobile Menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Toggle Submenus in Mobile
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    const icon = document.getElementById(id + 'Icon');
+    
+    // Toggle the menu
+    if (dropdown.classList.contains('hidden')) {
+      dropdown.classList.remove('hidden');
+      dropdown.classList.add('flex');
+      // Rotate icon
+      icon.classList.add('rotate-180');
+    } else {
+      dropdown.classList.add('hidden');
+      dropdown.classList.remove('flex');
+      // Reset icon
+      icon.classList.remove('rotate-180');
+    }
+  }
+</script>
 <!-- Script for Mobile Menu -->
 
 

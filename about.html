@@ -257,7 +257,7 @@
   </head>
   <body>
     <!-- TOP BAR -->
-    <div class="w-full bg-[#1c89c8] text-white">
+     <div class="w-full bg-[#5cb650] text-white">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center py-3 px-4 gap-3">
         <div class="flex flex-wrap items-center justify-center gap-6">
           <a href="mailto:info@enversys.com" class="flex items-center gap-2 hover:text-gray-200 transition-colors text-sm font-sans">
@@ -266,7 +266,7 @@
           </a>
           <a href="tel:+919999999999" class="flex items-center gap-2 hover:text-gray-200 transition-colors text-sm font-sans">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
-            +91-21-35358761
+             +91 9850600099 / 020-295218030
           </a>
         </div>
         <div class="hidden md:flex items-center gap-3">
@@ -276,347 +276,361 @@
       </div>
     </div>
 
- <!-- NAVBAR -->
 <header class="w-full bg-white shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-4 relative">
-    <!-- Logo -->
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="img/logo.png" 
+    
+    <a href="/index.html" class="flex items-center gap-3">
+      <img src="/img/logo.png" 
            onerror="this.onerror=null; this.src='https://placehold.co/180x60/ffffff/1c89c8?text=Enversys'; this.style.opacity='1'" 
            alt="Enversys Logo" 
            class="h-10 sm:h-12 object-contain" />
     </a>
 
-    <!-- Desktop Menu -->
-    <nav class="hidden lg:flex gap-8 text-[15px]  relative">
-      <a href="index.html" class="nav-link">Home</a>
+    <nav class="hidden lg:flex gap-8 text-[15px] relative items-center">
+      <a href="/index.html" class="nav-link hover:text-blue-600 transition-colors">Home</a>
 
-      <!-- About Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
           About
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="about.html" class="block px-4 py-2 hover:bg-gray-50">Our Company</a>
-          <a href="founder.html" class="block px-4 py-2 hover:bg-gray-50">Founder</a>
-          <a href="ourteam.html" class="block px-4 py-2 hover:bg-gray-50">Our Team</a>
+        <div class="absolute left-0 top-full mt-0 w-56 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/about.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Our Company</a>
+            <a href="/founder.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Founder</a>
+            <a href="/ourteam.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Our Team</a>
+            <a href="/why-us.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Why Us</a>
+            <a href="/certificates.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Certificates</a>
+          </div>
         </div>
       </div>
 
-      <!-- Services Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
           Services
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-64 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="environment-services.html" class="block px-4 py-2 hover:bg-gray-50">Environment Services</a>
-          <a href="sustainability-services.html" class="block px-4 py-2 hover:bg-gray-50">Sustainability Services</a>
-          <a href="other-legal-compliance.html" class="block px-4 py-2 hover:bg-gray-50">Other Legal Compliance Services</a>
-          <a href="consent-management.html" class="block px-4 py-2 hover:bg-gray-50">Consent Management and Compliances</a>
-          <a href="environment-monitoring.html" class="block px-4 py-2 hover:bg-gray-50">Environment Monitoring</a>
+        <div class="absolute left-0 top-full mt-0 w-72 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/services/EnvironmentalServices.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Environmental Services</a>
+            <a href="/services/consent-management.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Consent Management and Compliances</a>
+            <a href="/services/legal-compliances.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Other Legal Compliances Services</a>
+            <a href="/services/sustainability-services.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Sustainability Services</a>
+            <a href="/services/NABL&MoEFLABORATORY.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Environmental Monitoring</a>
+          </div>
         </div>
       </div>
 
-      <!-- Product Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
-          Product
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
+          Products
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-64 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="water-treatment-plant.html" class="block px-4 py-2 hover:bg-gray-50">Water Treatment Plant</a>
-          <a href="air-pollution-control.html" class="block px-4 py-2 hover:bg-gray-50">Air Pollution Control Equipment</a>
-          <a href="waste-water-treatment.html" class="block px-4 py-2 hover:bg-gray-50">Waste Water Treatment</a>
-          <a href="other-products.html" class="block px-4 py-2 hover:bg-gray-50">Other Products</a>
+        <div class="absolute left-0 top-full mt-0 w-80 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/products/ETP.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Effluent Treatment Plants (ETP)</a>
+            <a href="/products/STP.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Sewage Treatment Plants (STP)</a>
+            <a href="/products/ZLD.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Zero Liquid Discharge (ZLD)</a>
+            <a href="/products/RO+UF.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">RO+UF Plants</a>
+            <a href="/products/WaterSofteners.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Water Softeners</a>
+            <a href="/products/DMPlants.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">DM Plants</a>
+            <a href="/products/OrganicWasteConverters.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Organic Waste Converters</a>
+            <a href="/products/Air PollutionControlEquipment.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Air Pollution Control Equipment</a>
+          </div>
         </div>
       </div>
 
-      <a href="porject.html" class="nav-link">Projects</a>
-               <a href="Blogs.html" class="nav-link">Blogs</a>
-
-      <a href="career.html" class="nav-link">Career</a>
-      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="/porject.html" class="nav-link hover:text-blue-600 transition-colors">Projects</a>
+      <a href="/blogs.html" class="nav-link hover:text-blue-600 transition-colors">Blogs</a>
+      <a href="/career.html" class="nav-link hover:text-blue-600 transition-colors">Career</a>
+      <a href="/contact.html" class="nav-link hover:text-blue-600 transition-colors">Contact</a>
     </nav>
 
-    <!-- Contact Button -->
-    <a href="contact.html" class="hidden lg:inline-flex btn-primary py-2.5 px-6">Contact Us</a>
+    <a href="/contact.html" class="hidden lg:inline-flex bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium rounded-md py-2.5 px-6">Contact Us</a>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="lg:hidden hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
+    <button id="menuBtn" class="lg:hidden p-2 text-gray-700 hover:text-blue-600 focus:outline-none" aria-label="Menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
     </button>
+  </div>
 
-    <!-- MOBILE MENU -->
-    <div id="mobileMenu" class="mobile-menu lg:hidden hidden">
-      <a href="index.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Home</a>
-      
-      <!-- About Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('aboutMobile')">
-          About
-          <svg class="w-4 h-4 transform transition-transform" id="aboutMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="aboutMobile" class="hidden flex-col bg-gray-50">
-          <a href="our-company.html" class="block py-2 px-6 hover:bg-gray-100">Our Company</a>
-          <a href="founder.html" class="block py-2 px-6 hover:bg-gray-100">Founder</a>
-          <a href="our-team.html" class="block py-2 px-6 hover:bg-gray-100">Our Team</a>
-        </div>
+  <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full shadow-lg h-[calc(100vh-80px)] overflow-y-auto">
+    
+    <a href="/index.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Home</a>
+    
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('aboutMobile')">
+        About
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="aboutMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="aboutMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/about.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Our Company</a>
+        <a href="/founder.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Founder</a>
+        <a href="/ourteam.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Our Team</a>
+        <a href="/why-us.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Why Us</a>
+        <a href="/certificates.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Certificates</a>
       </div>
+    </div>
 
-      <!-- Services Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('servicesMobile')">
-          Services
-          <svg class="w-4 h-4 transform transition-transform" id="servicesMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="servicesMobile" class="hidden flex-col bg-gray-50">
-          <a href="environment-services.html" class="block py-2 px-6 hover:bg-gray-100">Environment Services</a>
-          <a href="sustainability-services.html" class="block py-2 px-6 hover:bg-gray-100">Sustainability Services</a>
-          <a href="other-legal-compliance.html" class="block py-2 px-6 hover:bg-gray-100">Other Legal Compliance Services</a>
-          <a href="consent-management.html" class="block py-2 px-6 hover:bg-gray-100">Consent Management and Compliances</a>
-          <a href="environment-monitoring.html" class="block py-2 px-6 hover:bg-gray-100">Environment Monitoring</a>
-        </div>
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('servicesMobile')">
+        Services
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="servicesMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="servicesMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/services/EnvironmentalServices.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Environmental Services</a>
+        <a href="/services/consent-management.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Consent Management and Compliances</a>
+        <a href="/services/legal-compliances.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Other Legal Compliances Services</a>
+        <a href="/services/sustainability-services.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Sustainability Services</a>
+        <a href="/services/environmental-monitoring.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Environmental Monitoring</a>
       </div>
+    </div>
 
-      <!-- Product Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('productMobile')">
-          Product
-          <svg class="w-4 h-4 transform transition-transform" id="productMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="productMobile" class="hidden flex-col bg-gray-50">
-          <a href="water-treatment-plant.html" class="block py-2 px-6 hover:bg-gray-100">Water Treatment Plant</a>
-          <a href="air-pollution-control.html" class="block py-2 px-6 hover:bg-gray-100">Air Pollution Control Equipment</a>
-          <a href="waste-water-treatment.html" class="block py-2 px-6 hover:bg-gray-100">Waste Water Treatment</a>
-          <a href="other-products.html" class="block py-2 px-6 hover:bg-gray-100">Other Products</a>
-        </div>
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('productMobile')">
+        Products
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="productMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="productMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/products/ETP.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Effluent Treatment Plants (ETP)</a>
+        <a href="/products/STP.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Sewage Treatment Plants (STP)</a>
+        <a href="/products/ZLD.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Zero Liquid Discharge (ZLD)</a>
+        <a href="/products/RO+UF.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">RO+UF Plants</a>
+        <a href="/products/WaterSofteners.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Water Softeners</a>
+        <a href="/products/DMPlants.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">DM Plants</a>
+        <a href="/products/OrganicWasteConverters.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Organic Waste Converters</a>
+        <a href="/products/Air PollutionControlEquipment.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Air Pollution Control Equipment</a>
       </div>
+    </div>
 
-      <a href="projects.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Projects</a>
-      <a href="blogs.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Blogs</a>
-      <a href="career.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Career</a>
-      <a href="contact.html" class="block py-4 px-6 hover:bg-gray-50 font-medium">Contact</a>
+    <a href="/projects.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Projects</a>
+    <a href="/blogs.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Blogs</a>
+    <a href="/career.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Career</a>
+    <a href="/contact.html" class="block py-4 px-6 hover:bg-gray-50 font-medium text-gray-800">Contact</a>
 
-      <div class="p-6 flex flex-col gap-4 bg-slate-50 border-t border-gray-200">
-        <a class="btn-primary w-full justify-center py-3" href="#">Get a Quote</a>
-        <a class="btn-secondary w-full justify-center py-3" href="#">Get Brochure</a>
-      </div>
+    <div class="p-6 flex flex-col gap-3 bg-white border-t border-gray-200 mb-10">
+      <a class="block w-full text-center bg-blue-600 text-white font-medium py-3 rounded hover:bg-blue-700 transition-colors" href="#">Get a Quote</a>
+      <a class="block w-full text-center border border-gray-300 text-gray-700 font-medium py-3 rounded hover:bg-gray-50 transition-colors" href="#">Get Brochure</a>
     </div>
   </div>
 </header>
 
+<script>
+  // Toggle Main Mobile Menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Toggle Submenus in Mobile
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    const icon = document.getElementById(id + 'Icon');
+    
+    // Toggle the menu
+    if (dropdown.classList.contains('hidden')) {
+      dropdown.classList.remove('hidden');
+      dropdown.classList.add('flex');
+      // Rotate icon
+      icon.classList.add('rotate-180');
+    } else {
+      dropdown.classList.add('hidden');
+      dropdown.classList.remove('flex');
+      // Reset icon
+      icon.classList.remove('rotate-180');
+    }
+  }
+</script>
 <!-- Script for Mobile Menu -->
 
-
-  <section class="relative w-full h-[500px] overflow-hidden font-sans">
+<section class="relative w-full h-[400px] sm:h-[500px] overflow-hidden font-sans">
   
   <div class="absolute inset-0 w-full h-full z-0 bg-cover bg-center bg-no-repeat" 
-       style="background-image: url('img/Markal\ Edited.jpg');">
-    <div class="absolute inset-0 bg-black/10"></div>
+       style="background-image: url('img/Markal\ Edited.jpg');"> <div class="absolute inset-0 bg-black/40"></div>
   </div>
 
-  <div class="absolute inset-0 w-full h-full z-12"
-       style="clip-path: polygon(100% 0, 100% 100%, 30% 100%); 
-              background: linear-gradient(to bottom left, rgba(28, 137, 200, 0.65), rgba(15, 76, 117, 0.75));
+  <div class="absolute inset-0 w-full h-full z-10"
+       style="clip-path: polygon(100% 0, 100% 100%, 0% 100%); 
+              background: linear-gradient(to top right, rgba(28, 137, 200, 0.9), rgba(15, 76, 117, 0.4));">
+  </div>
 
-              ">
-    
-    <div class="container mx-auto h-full flex flex-col justify-end items-end px-6 pb-12 sm:pb-16 text-white text-right">
+  <div class="absolute inset-0 z-20 container mx-auto flex flex-col justify-center items-center sm:items-end px-6 text-white text-center sm:text-right">
       
-      <div class="max-w-lg w-full flex flex-col items-end">
+      <div class="max-w-2xl w-full flex flex-col items-center sm:items-end mt-20 sm:mt-0">
         
-        <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 leading-tight drop-shadow-xl tracking-wide text-white">
+        <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-sm mb-2 bg-white/10 px-3 py-1 rounded backdrop-blur-sm border border-white/20">
+            Who We Are
+        </span>
+
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold mb-4 leading-tight drop-shadow-xl tracking-wide">
           About Us
         </h1>
 
-        <p class="text-lg sm:text-xl font-light mb-8 opacity-95 leading-relaxed drop-shadow-md tracking-wide text-blue-50">
-          Pioneering sustainable solutions for a greener tomorrow. Connecting nature with innovation.
+        <p class="text-base sm:text-xl font-light mb-8 opacity-95 leading-relaxed drop-shadow-md tracking-wide text-blue-50">
+          Pioneering sustainable solutions for a greener tomorrow. <br class="hidden sm:block">Connecting nature with innovation.
         </p>
 
-        <div class="inline-flex items-center gap-3 text-sm sm:text-base font-medium bg-white/10 px-4 py-2 rounded-full backdrop-blur-md border border-white/20 shadow-lg transition-transform hover:scale-105">
-          <a href="index.html" class="flex items-center gap-1 opacity-90 hover:opacity-100 transition-opacity">
+        <div class="inline-flex items-center gap-3 text-sm font-medium bg-white/10 px-5 py-2.5 rounded-full backdrop-blur-md border border-white/20 shadow-lg hover:bg-white/20 transition-all">
+          <a href="index.html" class="flex items-center gap-1 opacity-80 hover:opacity-100 transition-opacity">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
             </svg>
             Home
           </a>
-          <span class="opacity-60">/</span>
+          <span class="opacity-50">/</span>
           <span class="text-white font-semibold">About Us</span>
         </div>
 
       </div>
 
-    </div>
   </div>
-
 </section>
-
+<section class="py-16 sm:py-24 bg-white relative overflow-hidden">
     
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            
+            <div class="order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-[rgb(28,137,200)]"></span>
+                    <span class="text-[rgb(28,137,200)] text-xs font-bold uppercase tracking-wider">Our Story</span>
+                </div>
 
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                    Welcome to <span class="text-[rgb(28,137,200)]">Enversys Greentek Solutions</span>
+                </h2>
 
+                <div class="space-y-6 text-slate-600 text-base sm:text-lg leading-relaxed text-justify">
+                    <p>
+                        Based in Pune and serving clients across India, we are a leading manufacturing and consultancy firm boasting extensive expertise in <strong>industrial pollution control and statutory compliance</strong>. We pride ourselves on being a highly competent organization and your one-stop solution for all industrial pollution abatement needs.
+                    </p>
+                    <p>
+                        Our experts bring diverse experience in designing treatment plants tailored to different industries. Our competent staff—including <strong>Process Design Engineers, Project Commissioning Engineers, Chemists, and Operators</strong>—ensures seamless project execution.
+                    </p>
+                    <p>
+                        Over the years, we have completed numerous projects encompassing the design, installation, and commissioning of cutting-edge wastewater treatment plants (UFRP, WTP, STP, ETP & ZLD) and air pollution control equipment. We also specialize in <strong>Environmental Consultancy Services</strong>, providing expertise in EC, EIA, EMP, LEED, IGBC & GRIHA certifications, as well as Carbon footprint studies and Green Audits.
+                    </p>
+                </div>
 
-
-<section class="py-16 sm:py-24 bg-[#f8fafc] relative overflow-hidden">
-  
-  <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-[#1c89c8]/5 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-[#5cb650]/5 rounded-full blur-3xl"></div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-      
-      <div class="order-1">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[#5cb650]/20 shadow-sm mb-6">
-          <div class="w-2 h-2 rounded-full bg-[#5cb650] animate-pulse"></div>
-          <span class="text-[#5cb650] text-xs sm:text-sm font-bold tracking-wide uppercase">Our Vision</span>
-        </div>
-
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0f172a] mb-6 leading-tight">
-          Building a Cleaner Future with <br>
-          <span class="bg-gradient-to-r from-[#1c89c8] to-[#5cb650] bg-clip-text text-transparent">Sustainable Water & Pollution Solutions</span>
-        </h2>
-
-        <p class="text-[#64748b] text-base sm:text-lg leading-relaxed mb-8">
-          Our mission is to lead the world in water and wastewater engineering while delivering innovative, reliable, and affordable pollution abatement solutions that ensure environmental protection and customer satisfaction.
-        </p>
-
-        <div class="space-y-6 mb-10">
-
-          <!-- Point 1 -->
-          <div class="flex group">
-            <div class="shrink-0 mr-4">
-              <div class="w-12 h-12 rounded-xl bg-white border border-gray-100 shadow-md flex items-center justify-center group-hover:border-[#1c89c8] group-hover:shadow-[#1c89c8]/10 transition-all duration-300">
-                <svg class="w-6 h-6 text-[#1c89c8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              </div>
+                
             </div>
-            <div>
-              <h4 class="text-lg font-bold text-[#0f172a] mb-1 group-hover:text-[#1c89c8] transition-colors">Global Leadership</h4>
-              <p class="text-sm text-[#64748b]">To become a global leader in water, wastewater engineering and pollution abatement services.</p>
-            </div>
-          </div>
 
-          <!-- Point 2 -->
-          <div class="flex group">
-            <div class="shrink-0 mr-4">
-              <div class="w-12 h-12 rounded-xl bg-white border border-gray-100 shadow-md flex items-center justify-center group-hover:border-[#5cb650] group-hover:shadow-[#5cb650]/10 transition-all duration-300">
-                <svg class="w-6 h-6 text-[#5cb650]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-              </div>
+            <div class="order-1 lg:order-2 relative">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform hover:scale-[1.02] transition-transform duration-500">
+                    <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=800&auto=format&fit=crop" 
+                         alt="Industrial Plant" 
+                         class="w-full h-[500px] object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+                        <p class="font-bold text-lg">Comprehensive Solutions</p>
+                        <p class="text-sm text-gray-200">From Manufacturing to Maintenance Contracts</p>
+                    </div>
+                </div>
+                
+                <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-[#5cb650] rounded-xl -z-10 hidden sm:block"></div>
+                <div class="absolute -top-6 -right-6 w-24 h-24 bg-[rgb(28,137,200)] rounded-full blur-xl opacity-50 -z-10"></div>
             </div>
-            <div>
-              <h4 class="text-lg font-bold text-[#0f172a] mb-1 group-hover:text-[#5cb650] transition-colors">Innovative Pollution Solutions</h4>
-              <p class="text-sm text-[#64748b]">To provide innovative solutions for pollution control.</p>
-            </div>
-          </div>
-
-          <!-- Point 3 -->
-          <div class="flex group">
-            <div class="shrink-0 mr-4">
-              <div class="w-12 h-12 rounded-xl bg-white border border-gray-100 shadow-md flex items-center justify-center group-hover:border-[#1c89c8] group-hover:shadow-[#1c89c8]/10 transition-all duration-300">
-                <svg class="w-6 h-6 text-[#1c89c8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 0 0118 0z"/></svg>
-              </div>
-            </div>
-            <div>
-              <h4 class="text-lg font-bold text-[#0f172a] mb-1 group-hover:text-[#1c89c8] transition-colors">Customer Satisfaction</h4>
-              <p class="text-sm text-[#64748b]">To maintain customer satisfaction through reliable, innovative, and compliant solutions.</p>
-            </div>
-          </div>
-
-          <!-- Point 4 -->
-          <div class="flex group">
-            <div class="shrink-0 mr-4">
-              <div class="w-12 h-12 rounded-xl bg-white border border-gray-100 shadow-md flex items-center justify-center group-hover:border-[#5cb650] group-hover:shadow-[#5cb650]/10 transition-all duration-300">
-                <svg class="w-6 h-6 text-[#5cb650]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-              </div>
-            </div>
-            <div>
-              <h4 class="text-lg font-bold text-[#0f172a] mb-1 group-hover:text-[#5cb650] transition-colors">Affordable Solutions</h4>
-              <p class="text-sm text-[#64748b]">To provide economic and affordable solutions for pollution control.</p>
-            </div>
-          </div>
-
-          <!-- Point 5 -->
-          <div class="flex group">
-            <div class="shrink-0 mr-4">
-              <div class="w-12 h-12 rounded-xl bg-white border border-gray-100 shadow-md flex items-center justify-center group-hover:border-[#1c89c8] group-hover:shadow-[#1c89c8]/10 transition-all duration-300">
-                <svg class="w-6 h-6 text-[#1c89c8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 0 0118 0z"/></svg>
-              </div>
-            </div>
-            <div>
-              <h4 class="text-lg font-bold text-[#0f172a] mb-1 group-hover:text-[#1c89c8] transition-colors">Environmental Protection</h4>
-              <p class="text-sm text-[#64748b]">To improve the environment and ensure pollution prevention while supporting business growth.</p>
-            </div>
-          </div>
-
-          <!-- Point 6 -->
-          <div class="flex group">
-            <div class="shrink-0 mr-4">
-              <div class="w-12 h-12 rounded-xl bg-white border border-gray-100 shadow-md flex items-center justify-center group-hover:border-[#5cb650] group-hover:shadow-[#5cb650]/10 transition-all duration-300">
-                <svg class="w-6 h-6 text-[#5cb650]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-              </div>
-            </div>
-            <div>
-              <h4 class="text-lg font-bold text-[#0f172a] mb-1 group-hover:text-[#5cb650] transition-colors">Reliable Pollution Control</h4>
-              <p class="text-sm text-[#64748b]">To provide reliable and trustworthy solutions for pollution control.</p>
-            </div>
-          </div>
 
         </div>
-
-        <a href="projects.html" class="inline-flex items-center gap-2 text-[#1c89c8] font-bold hover:text-[#0f172a] transition-colors group">
-          View Our Projects
-          <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
-      </div>
-
-      <div class="order-2 relative">
-        <div class="relative rounded-2xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white">
-          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" 
-               alt="Environmental Engineer at work" 
-               class="w-full h-[400px] sm:h-[550px] object-cover hover:scale-105 transition-transform duration-700">
-          
-          <div class="absolute inset-0 bg-gradient-to-tr from-[#0f172a]/40 to-transparent pointer-events-none"></div>
-        </div>
-
-        <div class="absolute bottom-8 -left-4 sm:-left-12 bg-white/90 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-xl border border-white/50 max-w-[200px] sm:max-w-[240px] animate-float-slow">
-          <div class="flex items-center gap-3 mb-2">
-            <div class="w-10 h-10 rounded-full bg-[#1c89c8]/10 flex items-center justify-center">
-              <svg class="w-5 h-5 text-[#1c89c8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            </div>
-            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Success</span>
-          </div>
-          <p class="text-sm text-[#0f172a] font-bold leading-snug">"Helped reduce carbon footprint by 40%."</p>
-        </div>
-
-        <div class="absolute top-8 -right-4 sm:-right-8 bg-[#5cb650] p-4 rounded-xl shadow-lg transform rotate-3">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
-
-        <div class="absolute -z-10 -bottom-8 -right-8">
-            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
-                <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <circle cx="2" cy="2" r="2" class="text-[#1c89c8]/20" fill="currentColor" />
-                </pattern>
-                <rect width="100" height="100" fill="url(#dots)" />
-            </svg>
-        </div>
-      </div>
-
     </div>
-  </div>
 </section>
+
+
+<section class="py-16 sm:py-24 bg-slate-50 relative">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-gray-100 to-transparent pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-[#5cb650] font-bold tracking-widest uppercase text-sm">Our Core Values</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Vision & Mission</h2>
+            <div class="w-20 h-1 bg-[rgb(28,137,200)] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-b-4 border-[rgb(28,137,200)] group">
+                <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[rgb(28,137,200)] transition-colors duration-300">
+                    <svg class="w-8 h-8 text-[rgb(28,137,200)] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Global Leadership</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    To become a global leader in water, wastewater engineering, and pollution abatement services.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-b-4 border-[#5cb650] group">
+                <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#5cb650] transition-colors duration-300">
+                    <svg class="w-8 h-8 text-[#5cb650] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Innovative Solutions</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    To provide innovative, cutting-edge solutions for complex pollution control challenges.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-b-4 border-[rgb(28,137,200)] group">
+                <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[rgb(28,137,200)] transition-colors duration-300">
+                    <svg class="w-8 h-8 text-[rgb(28,137,200)] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Customer Satisfaction</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    To achieve and maintain customer satisfaction by providing reliable and compliant solutions.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-b-4 border-[#5cb650] group">
+                <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#5cb650] transition-colors duration-300">
+                    <svg class="w-8 h-8 text-[#5cb650] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Affordable Economics</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    To provide economic and affordable solutions for pollution control without compromising quality.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-b-4 border-[rgb(28,137,200)] group">
+                <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[rgb(28,137,200)] transition-colors duration-300">
+                    <svg class="w-8 h-8 text-[rgb(28,137,200)] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Business & Environment</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    To improve the environment and ensure pollution prevention while taking care of business growth.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-b-4 border-[#5cb650] group">
+                <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#5cb650] transition-colors duration-300">
+                    <svg class="w-8 h-8 text-[#5cb650] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Trustworthy Service</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    To provide reliable, trustworthy, and long-term support for all pollution control needs.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
 
     <footer id="contact" class="bg-[#0f172a] text-white pt-12 sm:pt-16 pb-8 font-sans">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8">
@@ -686,38 +700,6 @@
       </div>
     </footer>
 
-    <script>
-      // Menu Toggle Logic
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      
-      menuBtn.addEventListener("click", function () {
-        this.classList.toggle("active");
-        mobileMenu.classList.toggle("active");
-        // Prevent scrolling when menu is open
-        if(mobileMenu.classList.contains('active')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
-      });
-
-      // Dropdown Logic for Mobile
-      function toggleDropdown(id) {
-        const dropdown = document.getElementById(id);
-        const icon = document.getElementById(id + 'Icon');
-        
-        // Toggle Visibility
-        if (dropdown.classList.contains('hidden')) {
-          dropdown.classList.remove('hidden');
-          dropdown.classList.add('flex');
-          icon.classList.add('rotate-180');
-        } else {
-          dropdown.classList.add('hidden');
-          dropdown.classList.remove('flex');
-          icon.classList.remove('rotate-180');
-        }
-      }
-    </script>
+  
   </body>
 </html>

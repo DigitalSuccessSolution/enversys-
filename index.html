@@ -257,7 +257,7 @@
   </head>
   <body>
     <!-- TOP BAR -->
-    <div class="w-full bg-[#1c89c8] text-white">
+    <div class="w-full bg-[#5cb650] text-white">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center py-3 px-4 gap-3">
         <div class="flex flex-wrap items-center justify-center gap-6">
           <a href="mailto:info@enversys.com" class="flex items-center gap-2 hover:text-gray-200 transition-colors text-sm font-sans">
@@ -266,7 +266,7 @@
           </a>
           <a href="tel:+919999999999" class="flex items-center gap-2 hover:text-gray-200 transition-colors text-sm font-sans">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
-            +91-21-35358761
+             +91 9850600099 / 020-295218030
           </a>
         </div>
         <div class="hidden md:flex items-center gap-3">
@@ -276,340 +276,502 @@
       </div>
     </div>
 
- <!-- NAVBAR -->
 <header class="w-full bg-white shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-4 relative">
-    <!-- Logo -->
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="img/logo.png" 
+    
+    <a href="/index.html" class="flex items-center gap-3">
+      <img src="/img/logo.png" 
            onerror="this.onerror=null; this.src='https://placehold.co/180x60/ffffff/1c89c8?text=Enversys'; this.style.opacity='1'" 
            alt="Enversys Logo" 
            class="h-10 sm:h-12 object-contain" />
     </a>
 
-    <!-- Desktop Menu -->
-    <nav class="hidden lg:flex gap-8 text-[15px]  relative">
-      <a href="index.html" class="nav-link">Home</a>
+    <nav class="hidden lg:flex gap-8 text-[15px] relative items-center">
+      <a href="/index.html" class="nav-link hover:text-blue-600 transition-colors">Home</a>
 
-      <!-- About Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
           About
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="about.html" class="block px-4 py-2 hover:bg-gray-50">Our Company</a>
-          <a href="founder.html" class="block px-4 py-2 hover:bg-gray-50">Founder</a>
-          <a href="ourteam.html" class="block px-4 py-2 hover:bg-gray-50">Our Team</a>
+        <div class="absolute left-0 top-full mt-0 w-56 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/about.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Our Company</a>
+            <a href="/founder.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Founder</a>
+            <a href="/ourteam.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Our Team</a>
+            <a href="/why-us.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Why Us</a>
+            <a href="/certificates.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Certificates</a>
+          </div>
         </div>
       </div>
 
-      <!-- Services Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
           Services
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-64 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="environment-services.html" class="block px-4 py-2 hover:bg-gray-50">Environment Services</a>
-          <a href="sustainability-services.html" class="block px-4 py-2 hover:bg-gray-50">Sustainability Services</a>
-          <a href="other-legal-compliance.html" class="block px-4 py-2 hover:bg-gray-50">Other Legal Compliance Services</a>
-          <a href="consent-management.html" class="block px-4 py-2 hover:bg-gray-50">Consent Management and Compliances</a>
-          <a href="environment-monitoring.html" class="block px-4 py-2 hover:bg-gray-50">Environment Monitoring</a>
+        <div class="absolute left-0 top-full mt-0 w-72 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/services/EnvironmentalServices.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Environmental Services</a>
+            <a href="/services/consent-management.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Consent Management and Compliances</a>
+            <a href="/services/legal-compliances.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Other Legal Compliances Services</a>
+            <a href="/services/sustainability-services.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Sustainability Services</a>
+            <a href="/services/NABL&MoEFLABORATORY.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Environmental Monitoring</a>
+          </div>
         </div>
       </div>
 
-      <!-- Product Dropdown -->
       <div class="relative group">
-        <button class="nav-link flex items-center gap-1">
-          Product
-          <svg class="w-3 h-3 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button class="nav-link flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
+          Products
+          <svg class="w-3 h-3 inline-block transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute left-0 mt-2 w-64 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-          <a href="water-treatment-plant.html" class="block px-4 py-2 hover:bg-gray-50">Water Treatment Plant</a>
-          <a href="air-pollution-control.html" class="block px-4 py-2 hover:bg-gray-50">Air Pollution Control Equipment</a>
-          <a href="waste-water-treatment.html" class="block px-4 py-2 hover:bg-gray-50">Waste Water Treatment</a>
-          <a href="other-products.html" class="block px-4 py-2 hover:bg-gray-50">Other Products</a>
+        <div class="absolute left-0 top-full mt-0 w-80 bg-white shadow-lg rounded-md border border-gray-100 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 transform origin-top group-hover:translate-y-0 translate-y-2">
+          <div class="py-2">
+            <a href="/products/ETP.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Effluent Treatment Plants (ETP)</a>
+            <a href="/products/STP.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Sewage Treatment Plants (STP)</a>
+            <a href="/products/ZLD.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Zero Liquid Discharge (ZLD)</a>
+            <a href="/products/RO+UF.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">RO+UF Plants</a>
+            <a href="/products/WaterSofteners.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Water Softeners</a>
+            <a href="/products/DMPlants.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">DM Plants</a>
+            <a href="/products/OrganicWasteConverters.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Organic Waste Converters</a>
+            <a href="/products/Air PollutionControlEquipment.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600">Air Pollution Control Equipment</a>
+          </div>
         </div>
       </div>
 
-      <a href="porject.html" class="nav-link">Projects</a>
-               <a href="Blogs.html" class="nav-link">Blogs</a>
-
-      <a href="career.html" class="nav-link">Career</a>
-      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="/porject.html" class="nav-link hover:text-blue-600 transition-colors">Projects</a>
+      <a href="/blogs.html" class="nav-link hover:text-blue-600 transition-colors">Blogs</a>
+      <a href="/career.html" class="nav-link hover:text-blue-600 transition-colors">Career</a>
+      <a href="/contact.html" class="nav-link hover:text-blue-600 transition-colors">Contact</a>
     </nav>
 
-    <!-- Contact Button -->
-    <a href="contact.html" class="hidden lg:inline-flex btn-primary py-2.5 px-6">Contact Us</a>
+    <a href="/contact.html" class="hidden lg:inline-flex bg-blue-600 text-white hover:bg-blue-700 transition-colors font-medium rounded-md py-2.5 px-6">Contact Us</a>
 
-    <!-- Mobile Menu Button -->
-    <button id="menuBtn" class="lg:hidden hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
+    <button id="menuBtn" class="lg:hidden p-2 text-gray-700 hover:text-blue-600 focus:outline-none" aria-label="Menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
     </button>
+  </div>
 
-    <!-- MOBILE MENU -->
-    <div id="mobileMenu" class="mobile-menu lg:hidden hidden">
-      <a href="index.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Home</a>
-      
-      <!-- About Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('aboutMobile')">
-          About
-          <svg class="w-4 h-4 transform transition-transform" id="aboutMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="aboutMobile" class="hidden flex-col bg-gray-50">
-          <a href="our-company.html" class="block py-2 px-6 hover:bg-gray-100">Our Company</a>
-          <a href="founder.html" class="block py-2 px-6 hover:bg-gray-100">Founder</a>
-          <a href="our-team.html" class="block py-2 px-6 hover:bg-gray-100">Our Team</a>
-        </div>
+  <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full shadow-lg h-[calc(100vh-80px)] overflow-y-auto">
+    
+    <a href="/index.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Home</a>
+    
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('aboutMobile')">
+        About
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="aboutMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="aboutMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/about.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Our Company</a>
+        <a href="/founder.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Founder</a>
+        <a href="/ourteam.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Our Team</a>
+        <a href="/why-us.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Why Us</a>
+        <a href="/certificates.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Certificates</a>
       </div>
+    </div>
 
-      <!-- Services Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('servicesMobile')">
-          Services
-          <svg class="w-4 h-4 transform transition-transform" id="servicesMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="servicesMobile" class="hidden flex-col bg-gray-50">
-          <a href="environment-services.html" class="block py-2 px-6 hover:bg-gray-100">Environment Services</a>
-          <a href="sustainability-services.html" class="block py-2 px-6 hover:bg-gray-100">Sustainability Services</a>
-          <a href="other-legal-compliance.html" class="block py-2 px-6 hover:bg-gray-100">Other Legal Compliance Services</a>
-          <a href="consent-management.html" class="block py-2 px-6 hover:bg-gray-100">Consent Management and Compliances</a>
-          <a href="environment-monitoring.html" class="block py-2 px-6 hover:bg-gray-100">Environment Monitoring</a>
-        </div>
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('servicesMobile')">
+        Services
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="servicesMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="servicesMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/services/EnvironmentalServices.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Environmental Services</a>
+        <a href="/services/consent-management.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Consent Management and Compliances</a>
+        <a href="/services/legal-compliances.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Other Legal Compliances Services</a>
+        <a href="/services/sustainability-services.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Sustainability Services</a>
+        <a href="/services/environmental-monitoring.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Environmental Monitoring</a>
       </div>
+    </div>
 
-      <!-- Product Dropdown Mobile -->
-      <div class="border-b border-gray-100">
-        <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium hover:bg-gray-50" onclick="toggleDropdown('productMobile')">
-          Product
-          <svg class="w-4 h-4 transform transition-transform" id="productMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="productMobile" class="hidden flex-col bg-gray-50">
-          <a href="water-treatment-plant.html" class="block py-2 px-6 hover:bg-gray-100">Water Treatment Plant</a>
-          <a href="air-pollution-control.html" class="block py-2 px-6 hover:bg-gray-100">Air Pollution Control Equipment</a>
-          <a href="waste-water-treatment.html" class="block py-2 px-6 hover:bg-gray-100">Waste Water Treatment</a>
-          <a href="other-products.html" class="block py-2 px-6 hover:bg-gray-100">Other Products</a>
-        </div>
+    <div class="border-b border-gray-100">
+      <button class="w-full text-left py-4 px-6 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50 focus:outline-none" onclick="toggleDropdown('productMobile')">
+        Products
+        <svg class="w-4 h-4 transform transition-transform duration-300" id="productMobileIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div id="productMobile" class="hidden flex-col bg-gray-50 pl-4 border-t border-gray-100">
+        <a href="/products/ETP.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Effluent Treatment Plants (ETP)</a>
+        <a href="/products/STP.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Sewage Treatment Plants (STP)</a>
+        <a href="/products/ZLD.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Zero Liquid Discharge (ZLD)</a>
+        <a href="/products/RO+UF.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">RO+UF Plants</a>
+        <a href="/products/WaterSofteners.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Water Softeners</a>
+        <a href="/products/DMPlants.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">DM Plants</a>
+        <a href="/products/OrganicWasteConverters.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Organic Waste Converters</a>
+        <a href="/products/Air PollutionControlEquipment.html" class="block py-3 px-6 text-gray-600 hover:text-blue-600">Air Pollution Control Equipment</a>
       </div>
+    </div>
 
-      <a href="projects.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Projects</a>
-      <a href="blogs.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Blogs</a>
-      <a href="career.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium">Career</a>
-      <a href="contact.html" class="block py-4 px-6 hover:bg-gray-50 font-medium">Contact</a>
+    <a href="/projects.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Projects</a>
+    <a href="/blogs.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Blogs</a>
+    <a href="/career.html" class="block py-4 px-6 border-b border-gray-100 hover:bg-gray-50 font-medium text-gray-800">Career</a>
+    <a href="/contact.html" class="block py-4 px-6 hover:bg-gray-50 font-medium text-gray-800">Contact</a>
 
-      <div class="p-6 flex flex-col gap-4 bg-slate-50 border-t border-gray-200">
-        <a class="btn-primary w-full justify-center py-3" href="#">Get a Quote</a>
-        <a class="btn-secondary w-full justify-center py-3" href="#">Get Brochure</a>
-      </div>
+    <div class="p-6 flex flex-col gap-3 bg-white border-t border-gray-200 mb-10">
+      <a class="block w-full text-center bg-blue-600 text-white font-medium py-3 rounded hover:bg-blue-700 transition-colors" href="#">Get a Quote</a>
+      <a class="block w-full text-center border border-gray-300 text-gray-700 font-medium py-3 rounded hover:bg-gray-50 transition-colors" href="#">Get Brochure</a>
     </div>
   </div>
 </header>
 
+<script>
+  // Toggle Main Mobile Menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Toggle Submenus in Mobile
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    const icon = document.getElementById(id + 'Icon');
+    
+    // Toggle the menu
+    if (dropdown.classList.contains('hidden')) {
+      dropdown.classList.remove('hidden');
+      dropdown.classList.add('flex');
+      // Rotate icon
+      icon.classList.add('rotate-180');
+    } else {
+      dropdown.classList.add('hidden');
+      dropdown.classList.remove('flex');
+      // Reset icon
+      icon.classList.remove('rotate-180');
+    }
+  }
+</script>
 <!-- Script for Mobile Menu -->
 
 
 
-<!-- hero section start -->
- 
-<section class="relative w-full h-screen min-h-[600px] overflow-hidden font-[Arial] flex items-center justify-center">
+<section class="relative w-full h-[85vh] min-h-[500px] max-h-[900px] overflow-hidden font-[Arial] bg-[#0b1120]">
 
-  <div id="hero-bg-slider" class="absolute inset-0 z-0">
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" 
-         style="background-image: url('img/Markal\ Edited.jpg');"></div>
+    <div id="hero-slider" class="relative w-full h-full">
+
+        <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out z-10" data-index="0">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1565514020176-db792fa6b403?q=80&w=1920&auto=format&fit=crop" 
+                     alt="Manufacturing Plant" 
+                     class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3 animate-fade-up">Infrastructure</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight animate-fade-up delay-100">
+                    Manufacturing Plant Pune <br><span class="text-[rgb(28,137,200)] text-xl md:text-3xl block mt-2 font-bold">(50,000 Sq. ft.)</span>
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl animate-fade-up delay-200">
+                    Our manufacturing plant is equipped with modern machinery and a streamlined layout to ensure efficient production. The facility follows strict quality and safety standards across all operations.
+                </p>
+                <div class="mt-6 animate-fade-up delay-300">
+                    <a href="#" class="px-6 py-2.5 bg-[rgb(28,137,200)] text-white text-sm md:text-base rounded-full font-bold hover:bg-[#5cb650] transition-colors duration-300">Explore Facility</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="1">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="img/WhatsApp Image 2025-12-03 at 11.08.19 AM.jpeg" alt="STP" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Water Solutions</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Sewage Treatment Plant (STP)
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    The STP treats domestic wastewater using biological and mechanical processes. It produces clean, reusable water, helping reduce overall water consumption.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="2">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920&auto=format&fit=crop" alt="ETP" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Industrial Solutions</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Effluent Treatment Plant (ETP)
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    The ETP handles industrial effluents and removes pollutants through advanced treatment stages. It ensures all discharged water meets environmental norms.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="3">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1920&auto=format&fit=crop" alt="ZLD" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Advanced Technology</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Zero Liquid Discharge (ZLD)
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    Our ZLD system ensures that no liquid waste leaves the facility. It recycles maximum water and converts remaining waste into safe solid by-products.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="4">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1920&auto=format&fit=crop" alt="MEE" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Efficiency</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Multi Effect Evaporator (MEE)
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    The MEE system concentrates wastewater using multiple evaporation stages. It improves efficiency and reduces overall waste volume for further processing.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="5">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1591193686104-fddba4d0e4d8?q=80&w=1920&auto=format&fit=crop" alt="OWC" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Green Energy</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Organic Waste Converter (OWC)
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    The OWC converts biodegradable waste into nutrient-rich compost. This supports green landscaping and promotes sustainable waste management.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="6">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1527664557558-a2b352fcf203?q=80&w=1920&auto=format&fit=crop" alt="Products" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Our Products</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Water Treatment Products
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    We offer a wide range of water treatment solutions designed to purify, filter, and recycle water. Our products ensure reliable performance with long-term durability.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="7">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=1920&auto=format&fit=crop" alt="Environment" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Eco-Friendly</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Environment Services
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    Our environmental services focus on pollution control, waste management, and eco-compliance. We help industries maintain a cleaner and greener operational environment.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="8">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1920&auto=format&fit=crop" alt="Sustainability" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Future Ready</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Sustainability Services
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    Our sustainability solutions promote energy efficiency, waste reduction, and resource optimization. These services help businesses lower their ecological footprint.
+                </p>
+            </div>
+        </div>
+
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out z-0" data-index="9">
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1920&auto=format&fit=crop" alt="Compliance" class="w-full h-full object-cover animate-kenburns">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative z-20 h-full flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto pt-10">
+                <span class="text-[#5cb650] font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">Legal Compliance</span>
+                <h1 class="text-white font-black text-3xl md:text-5xl mb-4 leading-tight">
+                    Consent Management & Compliance
+                </h1>
+                <p class="text-gray-200 text-sm md:text-base leading-relaxed max-w-2xl">
+                    We manage all pollution control consents, statutory approvals, and environmental documentation. Our team ensures full legal compliance for smooth and risk-free plant operations.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="prevBtn" class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full border border-white/30 text-white hover:bg-[rgb(28,137,200)] hover:border-transparent transition-all duration-300 group bg-black/20 backdrop-blur-sm">
+        <svg class="w-5 h-5 md:w-6 md:h-6 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+    </button>
     
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('img/Markal\ Edited.jpg');"></div>
-    
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('img/about.jfif');"></div>
-    
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('img/hero\ image\ .jfif');"></div>
+    <button id="nextBtn" class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full border border-white/30 text-white hover:bg-[rgb(28,137,200)] hover:border-transparent transition-all duration-300 group bg-black/20 backdrop-blur-sm">
+        <svg class="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    </button>
 
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('img/Markal\ Edited.jpg');"></div>
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2" id="pagination">
+        </div>
 
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1600&auto=format&fit=crop');"></div>
-    
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1600&auto=format&fit=crop');"></div>
+    <style>
+        @keyframes kenburns {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        .animate-kenburns {
+            animation: kenburns 20s ease-out infinite alternate;
+        }
 
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop');"></div>
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Only animate active slide contents */
+        .slide.opacity-100 .animate-fade-up {
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+        .slide.opacity-0 .animate-fade-up {
+            opacity: 0;
+        }
+    </style>
 
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=1600&auto=format&fit=crop');"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const pagination = document.getElementById('pagination');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            let slideInterval;
 
-    <div class="bg-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" 
-         style="background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1600&auto=format&fit=crop');"></div>
-  </div>
+            // Create Dots
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.classList.add('w-2', 'h-2', 'rounded-full', 'transition-all', 'duration-300');
+                if(index === 0) {
+                    dot.classList.add('bg-[rgb(28,137,200)]', 'w-8');
+                } else {
+                    dot.classList.add('bg-white/50', 'hover:bg-white');
+                }
+                dot.addEventListener('click', () => goToSlide(index));
+                pagination.appendChild(dot);
+            });
 
-  <div class="absolute inset-0 bg-gradient-to-r from-black/10 via-black/10 to-black/10 z-0"></div>
-  <div class="absolute inset-0 bg-[#0b1120]/40 mix-blend-multiply z-0"></div>
+            const dots = pagination.querySelectorAll('button');
 
-  <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 pt-20 lg:pt-0">
+            function updateSlideClasses(index) {
+                // Update Slides
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.classList.remove('opacity-0', 'z-0');
+                        slide.classList.add('opacity-100', 'z-10');
+                    } else {
+                        slide.classList.remove('opacity-100', 'z-10');
+                        slide.classList.add('opacity-0', 'z-0');
+                    }
+                });
 
-      <div class="w-full lg:w-[55%] flex flex-col justify-center items-start text-center lg:text-left">
-          
-          <div class="flex items-center gap-3 mb-3 mx-auto lg:mx-0">
-              <div class="h-[2px] w-8 bg-[#5cb650]"></div>
-              <span class="text-[rgb(28,137,200)] font-bold uppercase tracking-[0.15em] text-[10px] bg-black/10 lg:text-xs">
-                  Eco-Friendly Solutions
-              </span>
-          </div>
-
-          <h1 class="text-white font-black leading-[1.2] mb-3 drop-shadow-lg" 
-              style="font-size: clamp(28px, 3.5vw, 48px);">
-              Enversys <br/>
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-[rgb(28,137,200)] to-cyan-300">
-              Lets make it a greenversel
-              </span>
-          </h1>
-
-          <div class="transform -skew-x-12 bg-black/10 border-l-4 border-[#5cb650] backdrop-blur-sm px-3 py-1.5 mb-5 mx-auto lg:mx-0 w-fit">
-              <p class="transform skew-x-12 text-gray-200 text-xs lg:text-sm font-medium">
-                 Enversys Greentek Solutions
-              </p>
-          </div>
-
-          <p class="text-gray-300 text-xs bg-black/10 lg:text-sm leading-relaxed max-w-lg mb-6 lg:border-l lg:border-gray-500 lg:pl-4 mx-auto lg:mx-0">
-             Your opinions are important to us. Whether it is a simple question or a valuable suggestion, we are here 24/7. You can call us by phone or email us directly.
-          </p>
-
-          <div class="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto justify-center lg:justify-start">
-              <a href="#" class="w-full sm:w-auto group relative px-6 py-3 bg-[rgb(28,137,200)] rounded-full overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(28,137,200,0.4)] transition-all duration-300 text-center">
-                  <span class="relative font-bold text-white text-sm flex items-center justify-center gap-2">
-                      Get Started
-                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                  </span>
-              </a>
-
-              <a href="#" class="w-full sm:w-auto px-6 py-3 rounded-full border border-white/30 hover:bg-white hover:text-[#0b1120] text-white font-bold transition-all duration-300 text-sm text-center">
-                  Our Services
-              </a>
-          </div>
-
-          <div class="mt-8 hidden sm:flex gap-8 border-t border-white/10 pt-4 mx-auto lg:mx-0">
-              <div class="text-center lg:text-left">
-                  <h3 class="text-xl font-bold text-white">250+</h3>
-                  <p class="text-[10px] text-gray-400 uppercase tracking-wider">Projects</p>
-              </div>
-              <div class="text-center lg:text-left">
-                  <h3 class="text-xl font-bold text-white">98%</h3>
-                  <p class="text-[10px] text-gray-400 uppercase tracking-wider">Success</p>
-              </div>
-          </div>
-
-      </div>
-
-      <div class="w-full lg:w-[45%] relative flex items-center justify-center lg:justify-end h-[40vh] lg:h-auto">
-          
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] bg-[rgb(28,137,200)] rounded-full blur-[100px] opacity-30 animate-pulse"></div>
-
-          <style>
-            @keyframes float-gentle {
-              0%, 100% { transform: translateY(0px); }
-              50% { transform: translateY(-10px); }
+                // Update Dots
+                dots.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.classList.remove('bg-white/50', 'w-2');
+                        dot.classList.add('bg-[rgb(28,137,200)]', 'w-8');
+                    } else {
+                        dot.classList.remove('bg-[rgb(28,137,200)]', 'w-8');
+                        dot.classList.add('bg-white/50', 'w-2');
+                    }
+                });
             }
-            .animate-float-gentle { animation: float-gentle 5s ease-in-out infinite; }
-          </style>
-          <div class="relative w-[260px] sm:w-[300px] lg:w-[360px] aspect-[4/5] z-20 animate-float-gentle">
-              
-              <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[30px] border border-white/20 backdrop-blur-sm p-2 shadow-2xl">
-                  <img src="img/water.jfif" 
-                       alt="Sustainability" 
-                       class="w-full h-full object-cover rounded-[24px] shadow-black/50 shadow-xl">
-              </div>
 
-              <div class="absolute -bottom-5 -left-4 bg-[#0f172a]/90 backdrop-blur border border-white/10 p-3 rounded-xl shadow-lg flex items-center gap-3 z-30">
-                  <div class="w-8 h-8 rounded-full bg-[#5cb650] flex items-center justify-center text-white">
-                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <div>
-                      <p class="text-white font-bold text-xs">Certified</p>
-                      <p class="text-gray-400 text-[10px]">ISO 14001</p>
-                  </div>
-              </div>
-          </div>
+            function goToSlide(index) {
+                currentSlide = index;
+                if (currentSlide < 0) currentSlide = totalSlides - 1;
+                if (currentSlide >= totalSlides) currentSlide = 0;
+                
+                updateSlideClasses(currentSlide);
+                resetTimer();
+            }
 
-          <div class="absolute right-0 top-1/2 transform -translate-y-1/2 flex-col gap-3 z-30 hidden xl:flex">
-              <a href="#" class="bg-white/10 hover:bg-[rgb(28,137,200)] text-white  py-2 px-5 rounded-l-full text-right text-xs font-bold transition-all w-32 hover:w-36">WATER TREATMENT</a>
-              <a href="#" class="bg-[rgb(28,137,200)] text-white py-3 px-6 rounded-l-full text-right text-xs font-bold shadow-lg w-40 -mr-2">WASTE WATER TREATMENT</a>
-              <a href="#" class="bg-white/10 hover:bg-[rgb(28,137,200)] text-white py-2 px-5 rounded-l-full text-right text-xs font-bold transition-all w-32 hover:w-36">AIR POLLUTION CONTROL</a>
-              <a href="#" class="bg-white/10 hover:bg-[rgb(28,137,200)] text-white py-2 px-5 rounded-l-full text-right text-xs font-bold transition-all w-32 hover:w-36">AIR POLLUTION CONTROL</a>
-          </div>
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
 
-      </div>
-  </div>
+            function prevSlide() {
+                goToSlide(currentSlide - 1);
+            }
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const slides = document.querySelectorAll('.bg-slide');
-        let currentSlide = 0;
-        const totalSlides = slides.length;
+            function startTimer() {
+                slideInterval = setInterval(nextSlide, 5000); // 5 seconds per slide
+            }
 
-        setInterval(() => {
-            // Hide current
-            slides[currentSlide].classList.remove('opacity-100');
-            slides[currentSlide].classList.add('opacity-0');
-            
-            // Calculate next
-            currentSlide = (currentSlide + 1) % totalSlides;
-            
-            // Show next
-            slides[currentSlide].classList.remove('opacity-0');
-            slides[currentSlide].classList.add('opacity-100');
-        }, 4000); // Change image every 4 seconds
-    });
-  </script>
+            function resetTimer() {
+                clearInterval(slideInterval);
+                startTimer();
+            }
+
+            // Event Listeners
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            // Start Autoplay
+            startTimer();
+        });
+    </script>
 
 </section>
 
-<!-- hero section end-->
 
 
-
-
-    <!-- ABOUT SECTION -->
 <section id="about" class="w-full py-14 sm:py-20 bg-white relative overflow-hidden">
 
-    <!-- Background Decorations -->
     <div class="absolute top-0 left-0 w-56 sm:w-72 h-56 sm:h-72 bg-[#1c89c8]/5 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3"></div>
     <div class="absolute bottom-0 right-0 w-56 sm:w-72 h-56 sm:h-72 bg-[#5cb650]/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10 items-center">
 
-            <!-- LEFT CONTENT -->
             <div class="order-2 lg:order-1">
 
-                <!-- Tag -->
                 <span class="inline-block bg-[#1c89c8] text-white px-5 py-2 rounded-full text-xs font-bold tracking-wider uppercase mb-4">
                     About Enversys
                 </span>
 
-                <!-- Heading -->
                 <h2 class="text-[#0f172a] mb-4 font-bold text-[26px] sm:text-[32px] leading-[1.2]">
                     Leading Environmental Consultancy & Manufacturing Firm
                 </h2>
 
-                <!-- Paragraph -->
                 <p class="mb-4 text-[#64748b] text-sm sm:text-[15px] leading-[1.7] text-justify">
                     Welcome to <strong>Enversys Greentek Solutions</strong>, a leading manufacturing & consultancy firm based in Pune,
                     serving clients across India. We are your one-stop solution for all industrial pollution abatement needs. 
@@ -619,186 +781,145 @@
                     innovative, economic, and compliant solutions while ensuring pollution prevention.
                 </p>
 
-                <!-- FEATURES -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-
-                    <!-- Feature 1 -->
-                    <div class="flex items-center gap-3 p-3 bg-[#f8fafc] rounded-xl border border-gray-100">
-                        <div class="w-10 h-10 bg-[#5cb650] rounded-lg flex items-center justify-center">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                            </svg>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                    <div class="flex items-center gap-3 p-3 bg-[#f8fafc] rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-10 h-10 bg-[#5cb650] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
                         </div>
                         <div>
                             <h4 class="text-[#0f172a] font-bold text-sm">Treatment Plants</h4>
-                            <p class="text-[#64748b] text-xs">STP, ETP, WTP & ZLD</p>
+                            <p class="text-[#64748b] text-[11px]">STP, ETP, WTP & ZLD</p>
                         </div>
                     </div>
 
-                    <!-- Feature 2 -->
-                    <div class="flex items-center gap-3 p-3 bg-[#f8fafc] rounded-xl border border-gray-100">
-                        <div class="w-10 h-10 bg-[#1c89c8] rounded-lg flex items-center justify-center">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                            </svg>
+                    <div class="flex items-center gap-3 p-3 bg-[#f8fafc] rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-10 h-10 bg-[#1c89c8] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
                             <h4 class="text-[#0f172a] font-bold text-sm">Consultancy</h4>
-                            <p class="text-[#64748b] text-xs">EC, EIA, Green Audits</p>
+                            <p class="text-[#64748b] text-[11px]">EC, EIA, Green Audits</p>
                         </div>
                     </div>
 
-                    <!-- Feature 3 -->
-                    <div class="flex items-center gap-3 p-3 bg-[#f8fafc] rounded-xl border border-gray-100">
-                        <div class="w-10 h-10 bg-[#5cb650] rounded-lg flex items-center justify-center">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                            </svg>
+                    <div class="flex items-center gap-3 p-3 bg-[#f8fafc] rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div class="w-10 h-10 bg-[#5cb650] rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                         </div>
                         <div>
                             <h4 class="text-[#0f172a] font-bold text-sm">O&M Services</h4>
-                            <p class="text-[#64748b] text-xs">Commissioning & Support</p>
+                            <p class="text-[#64748b] text-[11px]">Commissioning & Support</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- STATS -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-
-                    <div class="text-center p-3 bg-[#1c89c8] rounded-xl">
-                        <span class="text-xl sm:text-2xl font-bold text-white">Pan India</span>
-                        <p class="text-white/80 text-xs">Service Area</p>
-                    </div>
-
-                    <div class="text-center p-3 bg-[#5cb650] rounded-xl">
-                        <span class="text-xl sm:text-2xl font-bold text-white">100%</span>
-                        <p class="text-white/80 text-xs">Compliance</p>
-                    </div>
-
-                    <div class="text-center p-3 bg-[#1c89c8] rounded-xl">
-                        <span class="text-xl sm:text-2xl font-bold text-white">Expert</span>
-                        <p class="text-white/80 text-xs">Workforce</p>
-                    </div>
-
-                    <div class="text-center p-3 bg-[#5cb650] rounded-xl">
-                        <span class="text-xl sm:text-2xl font-bold text-white">Innovative</span>
-                        <p class="text-white/80 text-xs">Solutions</p>
-                    </div>
-                </div>
-
-                <!-- Buttons -->
-                <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="#" class="inline-flex justify-center items-center bg-[#1c89c8] text-white py-3 px-6 text-sm font-bold rounded-lg hover:bg-[#156a9e] transition">
-                        Our Services
-                    </a>
-
-                    <a href="#" class="inline-flex justify-center items-center bg-gray-100 text-[#0f172a] py-3 px-6 text-sm font-bold rounded-lg hover:bg-gray-200 transition border border-gray-200">
-                        Contact Experts
-                    </a>
-                </div>
+               
 
             </div>
 
-            <!-- RIGHT IMAGE -->
             <div class="order-1 lg:order-2">
-                <div class="relative max-w-md mx-auto lg:max-w-full">
-
-                    <!-- Main Image Card -->
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-                        <img src="img/Markal Edited.jpg" alt="Environmental Solutions"
-                        class="w-full h-[260px] sm:h-[350px] lg:h-[420px] object-cover">
-
-                        <!-- Bottom Overlay -->
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-5 flex justify-between items-end">
-                            <div>
-                                <p class="text-white/80 text-xs mb-1">Global Leader in</p>
-                                <h3 class="text-white text-xl font-bold">Pollution Abatement</h3>
+                
+                <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row h-full min-h-[500px] border border-gray-100">
+                    
+                    <div class="w-full md:w-[40%] bg-[#5cb650] p-6 text-white flex flex-col justify-center relative overflow-hidden">
+                        
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+                        
+                        <h3 class="font-bold text-2xl mb-6 relative z-10 border-b border-white/30 pb-3">Our <br>Achievements</h3>
+                        
+                        <div class="grid grid-cols-2 md:flex md:flex-col gap-y-5 gap-x-2 relative z-10">
+                            
+                            <div class="flex flex-col">
+                                <span class="text-2xl sm:text-3xl font-bold leading-none">500+</span>
+                                <span class="text-[10px] sm:text-[11px] font-medium opacity-90 uppercase tracking-wide">Satisfied Clients</span>
+                            </div>
+                            
+                            <div class="flex flex-col">
+                                <span class="text-2xl sm:text-3xl font-bold leading-none">350+</span>
+                                <span class="text-[10px] sm:text-[11px] font-medium opacity-90 uppercase tracking-wide">Projects Completed</span>
+                            </div>
+                            
+                            <div class="flex flex-col">
+                                <span class="text-2xl sm:text-3xl font-bold leading-none">15+</span>
+                                <span class="text-[10px] sm:text-[11px] font-medium opacity-90 uppercase tracking-wide">Presence in States</span>
                             </div>
 
-                            <!-- Small Icons -->
-                            <div class="flex -space-x-2">
-                                <div class="w-8 h-8 rounded-full bg-[#1c89c8] border-2 border-white flex items-center justify-center text-white text-xs font-bold">E</div>
-                                <div class="w-8 h-8 rounded-full bg-[#5cb650] border-2 border-white flex items-center justify-center text-white text-xs font-bold">G</div>
-                                <div class="w-8 h-8 rounded-full bg-[#1c89c8] border-2 border-white flex items-center justify-center text-white text-xs font-bold">S</div>
-                                <div class="w-8 h-8 rounded-full bg-white border-2 border-white flex items-center justify-center text-[#0f172a] text-xs font-bold">+</div>
+                            <div class="flex flex-col">
+                                <span class="text-2xl sm:text-3xl font-bold leading-none">50+</span>
+                                <span class="text-[10px] sm:text-[11px] font-medium opacity-90 uppercase tracking-wide">Sites Under O&M</span>
                             </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-2xl sm:text-3xl font-bold leading-none">21+</span>
+                                <span class="text-[10px] sm:text-[11px] font-medium opacity-90 uppercase tracking-wide">MLD Water Recycled</span>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <span class="text-2xl sm:text-3xl font-bold leading-none">11+</span>
+                                <span class="text-[10px] sm:text-[11px] font-medium opacity-90 uppercase tracking-wide">Years Experience</span>
+                            </div>
+
+                            <div class="flex flex-col col-span-2 md:col-span-1">
+                                <span class="text-2xl sm:text-3xl font-bold leading-none">21+</span>
+                                <span class="text-[10px] sm:text-[11px] font-medium opacity-90 uppercase tracking-wide">Types of Industries Served</span>
+                            </div>
+
                         </div>
                     </div>
 
-                    <!-- Floating Badge -->
-                    <div class="absolute -top-4 -right-4 w-20 h-20 sm:w-24 sm:h-24 bg-[#5cb650] rounded-2xl flex flex-col items-center justify-center shadow-xl rotate-6">
-                        <span class="text-xl sm:text-2xl font-bold text-white">Best</span>
-                        <span class="text-[10px] sm:text-xs font-semibold text-white/90">Quality</span>
+                    <div class="w-full md:w-[60%] bg-white p-4 relative flex items-center justify-center">
+                        <img src="img/map.png" alt="Pan India Presence Map" class="w-full h-auto object-contain max-h-[400px]">
+                        
+                        <div class="absolute top-4 right-4 opacity-50 hidden sm:block">
+                            </div>
                     </div>
 
                 </div>
             </div>
 
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16" id="counterSection">
-  
-  <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
-    <h3 class="text-[#1c89c8] mb-2 font-bold text-4xl counter" data-target="500">0</h3>
-    <p class="text-[#64748b] mb-0 font-sans">Happy Clients</p>
-  </div>
 
-  <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
-    <h3 class="text-[#5cb650] mb-2 font-bold text-4xl counter" data-target="1000">0</h3>
-    <p class="text-[#64748b] mb-0 font-sans">Projects Done</p>
-  </div>
+     
 
-  <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
-    <h3 class="text-[#1c89c8] mb-2 font-bold text-4xl counter" data-target="50">0</h3>
-    <p class="text-[#64748b] mb-0 font-sans">Expert Team</p>
-  </div>
+        <script>
+            const counters = document.querySelectorAll('.counter');
+            let counted = false;
 
-  <div class="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200">
-    <h3 class="text-[#5cb650] mb-2 font-bold text-4xl counter" data-target="10">0</h3>
-    <p class="text-[#64748b] mb-0 font-sans">Years Experience</p>
-  </div>
+            function startCounting() {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        
+                        let increment = target / 50; 
+                        if(increment < 1) increment = 1;
 
-</div>
-<script>
-  const counters = document.querySelectorAll('.counter');
-  let counted = false;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(updateCount, 30);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            }
 
-  function startCounting() {
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const speed = 40; // smaller = faster
+            const observer = new IntersectionObserver(entries => {
+                if (entries[0].isIntersecting && !counted) {
+                    startCounting();
+                    counted = true;
+                }
+            });
 
-        const increment = target / speed;
-
-        if (count < target) {
-          counter.innerText = Math.ceil(count + increment);
-          setTimeout(updateCount, 20);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  }
-
-  // Trigger when element becomes visible
-  const observer = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting && !counted) {
-      startCounting();
-      counted = true;
-    }
-  });
-
-  observer.observe(document.querySelector("#counterSection"));
-</script>
+            const counterSection = document.querySelector("#counterSection");
+            if(counterSection) {
+                observer.observe(counterSection);
+            }
+        </script>
 
     </div>
 </section>
-<!-- ABOUT SECTION END -->
 
 
 
@@ -970,52 +1091,7 @@
 
 
 
-    <!-- OUR CLIENTS SECTION -->
-    <section id="clients" class="w-full pb-20 sm:pb-28 bg-[#f8fafc]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-16">
-          <span class="inline-block bg-[#1c89c8] text-white px-6 py-2.5 rounded-full text-sm font-bold tracking-wide uppercase mb-6 font-sans">Trusted Partners</span>
-          <h2 class="text-[#0f172a] mb-5 font-bold">Who Are Our Clients</h2>
-          <p class="max-w-2xl mx-auto text-[#64748b] font-sans text-lg">We are proud to work with industry leaders and organizations committed to environmental sustainability.</p>
-        </div>
-
-        <div class="relative overflow-hidden">
-          <div class="client-slider flex items-center gap-12 py-8">
-            <div class="flex items-center gap-12 animate-scroll">
-              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
-              </div>
-              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
-              </div>
-              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
-              </div>
-              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
-              </div>
-            </div>
-            <div class="flex items-center gap-12 animate-scroll">
-               <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
-              </div>
-              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
-              </div>
-              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
-              </div>
-              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
-              </div>
-            </div>
-          </div>
-        </div>
-
-       
-      </div>
-    </section>
-
+  
 
 
     
@@ -1252,97 +1328,157 @@
       </div>
     </section>
 
-  <!-- FOOTER -->
-<footer id="contact" class="bg-[#0f172a] text-white pt-16 pb-8 font-sans">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+
+
+      <!-- OUR CLIENTS SECTION -->
+    <section id="clients" class="w-full pb-20 sm:pb-28 bg-[#f8fafc]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16">
+          <span class="inline-block bg-[#1c89c8] text-white px-6 py-2.5 rounded-full text-sm font-bold tracking-wide uppercase mb-6 font-sans">Trusted Partners</span>
+          <h2 class="text-[#0f172a] mb-5 font-bold">Who Are Our Clients</h2>
+          <p class="max-w-2xl mx-auto text-[#64748b] font-sans text-lg">We are proud to work with industry leaders and organizations committed to environmental sustainability.</p>
+        </div>
+
+        <div class="relative overflow-hidden">
+          <div class="client-slider flex items-center gap-12 py-8">
+            <div class="flex items-center gap-12 animate-scroll">
+              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
+              </div>
+              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
+              </div>
+              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
+              </div>
+              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
+              </div>
+            </div>
+            <div class="flex items-center gap-12 animate-scroll">
+               <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
+              </div>
+              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
+              </div>
+              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
+              </div>
+              <div class="client-logo flex-shrink-0 w-40 h-24 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center p-4 hover:border-[#1c89c8]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Client" class="max-w-full max-h-full object-contain opacity-70 hover:opacity-100"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+    </section>
+
+
+<footer id="contact" class="bg-[#5cb650] text-white pt-2 pb-6 font-sans antialiased">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-8">
     
-    <!-- Enversys Logo -->
-    <div>
-      <div class="flex items-center gap-3 mb-6">
-        <img src="img/logo.png">
+    <div class="col-span-2 lg:col-span-1 flex flex-col items-start">
+      <div class="bg-white px-4 py-3 rounded-lg shadow-sm mb-4">
+        <img src="img/logo.png" alt="Enversys Logo" class="h-8 w-auto">
       </div>
-      <p class="text-gray-400 text-sm mb-6">Enversys provides comprehensive environmental and sustainability solutions across India.</p>
+      <p class="text-white text-[13px] leading-relaxed mb-5 font-medium opacity-90">
+        Comprehensive environmental & sustainability solutions across India.
+      </p>
+      
       <div class="flex gap-3">
-        <!-- Social Icons -->
-        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#1c89c8] transition-colors">
-          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-          </svg>
+        <a href="#" class="group w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md transition-all duration-300 hover:scale-110 hover:shadow-lg">
+          <svg class="w-4 h-4 text-[#5cb650] group-hover:text-[#4da042]" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
-        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#1c89c8] transition-colors">
-          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-          </svg>
+        <a href="#" class="group w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md transition-all duration-300 hover:scale-110 hover:shadow-lg">
+          <svg class="w-4 h-4 text-[#5cb650] group-hover:text-[#4da042]" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
       </div>
     </div>
 
-    <!-- Our Services -->
     <div>
-      <h3 class="text-lg font-bold text-[#1c89c8] mb-4">Our Services</h3>
-      <ul class="space-y-0.3 text-gray-400 text-sm">
-        <li><a href="environment-services.html" class="hover:text-[#5cb650]">Environment Services</a></li>
-        <li><a href="sustainability-services.html" class="hover:text-[#5cb650]">Sustainability Services</a></li>
-        <li><a href="other-legal-compliance.html" class="hover:text-[#5cb650]">Other Legal Compliance Services</a></li>
-        <li><a href="consent-management.html" class="hover:text-[#5cb650]">Consent Management and Compliances</a></li>
-        <li><a href="environment-monitoring.html" class="hover:text-[#5cb650]">Environment Monitoring</a></li>
+      <h3 class="inline-block text-white font-bold text-xs uppercase tracking-[0.15em] border-b-2 border-white/50 pb-1 mb-4">Services</h3>
+      <ul class="space-y-2 text-[13px] font-medium text-white/90">
+        <li><a href="environment-services.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Environment Services</a></li>
+        <li><a href="sustainability-services.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Sustainability Services</a></li>
+        <li><a href="other-legal-compliance.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Legal Compliance</a></li>
+        <li><a href="consent-management.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Consent Management</a></li>
+        <li><a href="environment-monitoring.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Environment Monitoring</a></li>
       </ul>
     </div>
 
-    <!-- Our Products -->
     <div>
-      <h3 class="text-lg font-bold text-[#1c89c8] mb-4">Our Products</h3>
-      <ul class="space-y-0.3 text-gray-400 text-sm">
-        <li><a href="water-treatment-plant.html" class="hover:text-[#5cb650]">Water Treatment Plant</a></li>
-        <li><a href="air-pollution-control.html" class="hover:text-[#5cb650]">Air Pollution Control Equipment</a></li>
-        <li><a href="waste-water-treatment.html" class="hover:text-[#5cb650]">Waste Water Treatment</a></li>
-        <li><a href="other-products.html" class="hover:text-[#5cb650]">Other Products</a></li>
+      <h3 class="inline-block text-white font-bold text-xs uppercase tracking-[0.15em] border-b-2 border-white/50 pb-1 mb-4">Products</h3>
+      <ul class="space-y-2 text-[13px] font-medium text-white/90">
+        <li><a href="water-treatment-plant.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Water Treatment Plant</a></li>
+        <li><a href="air-pollution-control.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Air Pollution Control</a></li>
+        <li><a href="waste-water-treatment.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Waste Water Treatment</a></li>
+        <li><a href="other-products.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Other Products</a></li>
       </ul>
     </div>
 
-    <!-- Quick Links -->
     <div>
-      <h3 class="text-lg font-bold text-[#1c89c8] mb-4">Quick Links</h3>
-      <ul class="space-y-0.3 text-gray-400 text-sm">
-        <li><a href="index.html" class="hover:text-[#5cb650]">Home</a></li>
-        <li><a href="about.html" class="hover:text-[#5cb650]">About</a></li>
-        <li><a href="services.html" class="hover:text-[#5cb650]">Services</a></li>
-        <li><a href="product.html" class="hover:text-[#5cb650]">Product</a></li>
-        <li><a href="projects.html" class="hover:text-[#5cb650]">Projects</a></li>
-        <li><a href="blogs.html" class="hover:text-[#5cb650]">Blogs</a></li>
-        <li><a href="career.html" class="hover:text-[#5cb650]">Career</a></li>
-        <li><a href="contact.html" class="hover:text-[#5cb650]">Contact</a></li>
+      <h3 class="inline-block text-white font-bold text-xs uppercase tracking-[0.15em] border-b-2 border-white/50 pb-1 mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-[13px] font-medium text-white/90">
+        <li><a href="index.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Home</a></li>
+        <li><a href="about.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">About</a></li>
+        <li><a href="services.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Services</a></li>
+        <li><a href="product.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Product</a></li>
+        <li><a href="projects.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-white hover:pl-1 transition-all duration-300 block">Contact</a></li>
       </ul>
     </div>
 
-    <!-- Corporate Office -->
     <div>
-      <h3 class="text-lg font-bold text-[#1c89c8] mb-4">Corporate Office</h3>
-      <div class="space-y-2 text-sm text-gray-400">
-        <p>Greens Center, Aditya Birla Hospital Road</p>
-        <p>Thergaon, Pune 411033</p>
-        <p>Phone: +91 9850864141</p>
-        <p>Email: info@enversys.com</p>
+      <h3 class="inline-block text-white font-bold text-xs uppercase tracking-[0.15em] border-b-2 border-white pb-1 mb-4">
+        Contact Us
+      </h3>
+
+      <div class="space-y-3 text-[13px] text-white font-medium">
+        <p class="flex items-start gap-2 text-white leading-relaxed">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 mt-1 flex-shrink-0">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5s-3 1.343-3 3 1.343 3 3 3z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.341A8 8 0 104.572 15.34L12 21l7.428-5.659z" />
+          </svg>
+          <span>Greens Center, Aditya Birla Hospital Rd,<br> Thergaon, Pune 411033</span>
+        </p>
+
+        <p class="flex items-center gap-2 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 flex-shrink-0">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h1.28a2 2 0 011.94 1.515l.72 3a2 2 0 01-.54 1.932l-.97.97a16 16 0 007.07 7.07l.97-.97a2 2 0 011.932-.54l3 .72A2 2 0 0121 17.72V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z" />
+          </svg>
+          <span class="font-bold text-white">+91 9850864141</span>
+        </p>
+
+        <p class="flex items-center gap-2 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 flex-shrink-0">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4-3-4 3m8 0l4-3m-4 3v6m0-6l-4 3m-4-3v6m0-6l4 3" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6H4a2 2 0 00-2 2v8a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2z" />
+          </svg>
+          <span class="border-b border-white hover:border-white text-white break-all">info@enversys.com</span>
+        </p>
       </div>
     </div>
 
   </div>
 
-  <!-- Footer Bottom -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-    <p class="text-gray-500 text-sm">© 2025 Enversys. All Rights Reserved.</p>
-    <a href="#" class="btn-primary py-2 px-6 mt-4 md:mt-0">GET A QUOTE</a>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-8 pt-4 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-white text-[11px] opacity-70 tracking-wide text-center md:text-left">© 2025 Enversys. All Rights Reserved.</p>
+    
+    <a href="https://digitalsuccesssolutions.in/">
+      <p class="text-white text-[11px] opacity-70 tracking-wide text-center md:text-left">Designed & Developed by <span class="text-[15px]">Digital Success Solutions</span></p>
+    </a>    
+    
+    <a href="#" class="bg-white text-[#5cb650] hover:bg-gray-50 hover:shadow-lg transform hover:-translate-y-0.5 font-bold py-2 px-6 rounded text-xs tracking-wider transition-all duration-300">
+      GET A QUOTE
+    </a>
   </div>
 </footer>
 
-
-    <script>
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      menuBtn.addEventListener("click", function () {
-        this.classList.toggle("active");
-        mobileMenu.classList.toggle("active");
-      });
-    </script>
+   
   </body>
 </html>
